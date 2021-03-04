@@ -44,6 +44,6 @@ Qlik Replicate can deliver any data from popular relational database systems, ma
 * Amazon RDS for PostgreSQL
 * Amazon Redshift
 
-In addition, at the end of the tutorial you should check out Qlik Compose, our Data Warehousing Automation solution that can automate the process of creating and updating analytics-ready data sets in Amazon Redshift. Click the “Contact Us” tab and complete the form to request more information about Qlik Replicate connectivity options or Qlik Compose for Data Warehouses.
+In addition, at the end of the tutorial you should check out Qlik Compose, our Data Warehousing Automation solution that can automate the process of creating and updating analytics-ready data sets in Amazon Redshift. Click the [Contact Us](../contact_us) menu and complete the form to request more information about Qlik Replicate connectivity options or Qlik Compose for Data Warehouses.
 
 Now Feel free to ask Questions and Please click on `Getting Started` to Start the AWS Immersion Day Tutorials
