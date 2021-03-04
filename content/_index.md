@@ -25,11 +25,6 @@ Qlik Replicate can also deliver any data from popular relational database system
 * Amazon RDS for PostgreSQL
 * Amazon RDS for SQL Server
 * Amazon RDS for Oracle
-* Oracle on Oracle Cloud
-* Microsoft Azure SQL Managed Instance
-* Microsoft Azure Database for MySQL
-* Google Cloud SQL for PostgreSQL
-* Google Cloud SQL for MySQL
 * Salesforce
 #### Target Endpoints for Qlik Replicate 
 * Amazon Aurora MySQL

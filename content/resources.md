@@ -7,9 +7,9 @@ a good one and that our focus on ease of use was evident.
 
 The product documentation and help can be found at:
 
-[Qlik Replicate Help Guide](https://help.qlik.com/en-US/replicate/November2020-SR1/Content/Replicate/Main/Introduction/Home.htm) - Online Help Guide for Qlik Replicate 
+[Qlik Replicate Online Guide](https://help.qlik.com/en-US/replicate/November2020-SR1/Content/Replicate/Main/Introduction/Home.htm) - Online Help Guide for Qlik Replicate 
 
-[Qlik Replicate Help Guide](https://help.qlik.com/en-US/replicate/November2020-SR1/Content/Replicate/Main/Introduction/Home.htm) - Online Help Guide for Qlik Replicate 
+[Qlik Replicate Offline User Guide](/files/Qlik_Replicate_User_Guide.pdf)) - PDF Help Guide for Qlik Replicate 
 
 [Qlik Community](https://community.qlik.com/) - Community page for Qlik Replicate
 
