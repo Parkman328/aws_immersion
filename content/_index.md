@@ -17,7 +17,7 @@ While the tutorial scenario quickly highlights the concept of data ingestion and
 Qlik Replicate can also deliver any data from popular relational database systems, mainframes, or SAP applications that you might have in your enterprise.
 
 ## Source and Target Endpoints Supported:  
-#### Source Endpoint for Qlik Replicate
+#### Source Endpoint for Qlik Replicate 
 * Amazon Aurora MySQL
 * AWS Aurora Cloud for PostgreSQL
 * Amazon RDS for MySQL
@@ -31,7 +31,7 @@ Qlik Replicate can also deliver any data from popular relational database system
 * Google Cloud SQL for PostgreSQL
 * Google Cloud SQL for MySQL
 * Salesforce
-#### Target Endpoints for Qlik Replicate
+#### Target Endpoints for Qlik Replicate 
 * Amazon Aurora MySQL
 * Amazon Aurora PostgreSQL
 * Amazon RDS for MariaDB

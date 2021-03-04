@@ -22,8 +22,8 @@
       
       <guid>http://localhost:80/getting_started/</guid>
       <description>Preface Before beginning with the tutorial we like to tell you that your Qlik and AWS team is there to help you please do not hesitate to reach out.
-Before Starting Tutorial Make sure you can log into the following
- Qlik Replicate Web UI __https://your_host_ip:3552/attunityreplicate/ User Name: admin Password: Aws_immersion123
+Before starting tutorial and labs make sure you can log into the following
+Connecting to Qlik Replicate Web UI   url:__https://your_host_ip:3552/attunityreplicate/ User Name: admin Password: Aws_immersion123
   For the lab we will not be using a certificate rather we will &amp;lsquo;accept risk and proceed on&amp;rsquo;</description>
     </item>
     
