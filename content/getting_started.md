@@ -22,4 +22,4 @@ ___https://your_host_ip:5430/login_
 
 __If there is warning about latest pgadmin version please disregard.__
 
-Next = Part1 - Configuration
+# [Please Click here to go to Tutorial](../tutorials) 
