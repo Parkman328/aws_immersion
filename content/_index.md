@@ -3,23 +3,20 @@
 # Welcome to Qlik Tutorial for AWS Immersion Day 2021! 
 ________________________________________________________________
 
-##### The Objective of Tutorial is to get hands-on experience using Qlik Data Integration Tools not to become an expert at using Qlik Replicate.
+__The Objective of this tutorial is to get introductory hands-on experience using Qlik Data Integration Tools not to become an expert at using Qlik Replicate.__
 
-This tutorial will demonstrate how to use Qlik Replicate (formerly Attunity Replicate) to ingest and deliver data in real-time to your various environment. Follow the step-by-step tutorial to quickly load sample data from a MySQL database into your PostgresSQL data warehouse, then watch as data updates happen in real time.  Due to cost and timing this tutorial runs in an Single EC2 envirooment setup with Qlik Replicate and Docker for MySQL, PostgreSQL, PGAdmin.
+This tutorial will demonstrate how to use Qlik Replicate to ingest and deliver data in real-time to your various environments. Follow the step-by-step tutorial to quickly load sample data from a MySQL database into your PostgresSQL data warehouse, then watch as data updates happen in real time.  Due to cost and timing this tutorial runs in a single EC2 environment setup with Qlik Replicate and Docker for MySQL, PostgreSQL, and PGAdmin.
 
 ## Overview
-Actual Tutorial  Consist of Three Parts:
+Actual tutorial consist of three parts:
 * Part 1 Configuring Qlik Replicate
 * Part 2 Designing Qlik Replicates Tasks
 * Part 3 Monitoring Qlik Replicate Tasks 
 
 While the tutorial scenario quickly highlights the concept of data ingestion and streaming to PostgresSQL, 
-Qlik Replicate can deliver any data from popular relational database systems, mainframes, or SAP applications that you might have in your enterprise.
+Qlik Replicate can also deliver any data from popular relational database systems, mainframes, or SAP applications that you might have in your enterprise.
 
-## Relating to Cloud Data Source Here are Source and Target Endpoints Supported.  
-
-
-
+## Source and Target Endpoints Supported:  
 #### Source Endpoint for Qlik Replicate
 * Amazon Aurora MySQL
 * AWS Aurora Cloud for PostgreSQL
