@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/screen.css">
+    <link rel="shortcut icon" href="/images/logos/qlik-icon-16.ico">
+    
+    
+    <title>AWS Immersion Day 2021 | Display Kafka Messages</title>
+</head><body><div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        
+        <a class="nav-link" href="/">
+        
+        
+        <i data-feather="home"></i> 
+        
+        
+        Home
+        </a>
+        
+        <a class="nav-link" href="/getting_started">
+        
+        
+        <i data-feather="play-circle"></i> 
+        
+        
+        Getting Started
+        </a>
+        
+        <a class="nav-link" href="/tutorials">
+        
+        
+        <i data-feather="star"></i> 
+        
+        
+        Tutorials
+        </a>
+        
+        <a class="nav-link" href="/resources">
+        
+        
+        <i data-feather="book"></i> 
+        
+        
+        Resources
+        </a>
+        
+        <a class="nav-link" href="/videos">
+        
+        
+        <i data-feather="youtube"></i> 
+        
+        
+        Videos
+        </a>
+        
+        <a class="nav-link" href="/contact_us">
+        
+        
+        <i data-feather="send"></i> 
+        
+        
+        Contact Qlik
+        </a>
+        
+    </nav>
+</div>
+<div class="grid">
+      <div class="unit one-third center-on-mobiles">
+        <h2>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.qlik.com/us/products">
+          
+            <img src="/images/qlik-logo-1x.png" alt="Qlik Logo" width="150" height="75">
+          </a>
+        </h2>
+      </div>
+      <h2 class="main-nav unit two-thirds align-center hide-on-mobiles"></h2>
+    </nav>
+</div><div id="content">
+<h2>Display Kafka Messages</h2>
+
+<div class="page-content">
+    <div class="wrapper">
+    <section class="tutorial">
+    <div class="grid">
+    <div class="unit whole" style="text-align: left">
+          <articles>
+    <p>Here are the 200 most recent messages that were delivered to Kafka displayed using
+the Kafka &ldquo;Console Consumer&rdquo;. Messages are deserialized as raw text, but as you can
+see the data is in JSON format as we configured in the Replicate task.</p>
+<!-- raw HTML omitted -->
+<pre><code>     /* Add redirection so we can get stderr. */
+     $cmd=&quot;/opt/kafka*/bin/kafka-console-consumer.sh --bootstrap-server kafka:29092  --topic testdrive --offset ${offset} --max-messages ${msgcount} --partition 0 2&gt;&amp;1&quot;;
+     $handle = popen(&quot;$kafkaopts;$cmd&quot;, 'r');
+
+     while (!feof($handle)) {
+        $output = fread($handle, 2096);
+        echo(nl2br($output));
+        ob_flush();
+        flush();
+     }
+     pclose($handle);
+  ?&gt;
+  {% endraw %}
+</code></pre>
+<!-- raw HTML omitted -->
+
+    
+    </articles>
+    </div>
+    <div class="clear"></div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+
+        </div><div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>©&nbsp;2021 Qlik Technologies, Inc. All rights reserved.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>Qlik Tutorials @ Partner Engineering</p>
+    </div>
+</div><script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script></body>
+</html>

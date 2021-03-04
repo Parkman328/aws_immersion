@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/screen.css">
+    <link rel="shortcut icon" href="/images/logos/qlik-icon-16.ico">
+    
+    
+    <title>AWS Immersion Day 2021 | Step 4 - Run Your Task</title>
+</head><body><div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        
+        <a class="nav-link" href="/">
+        
+        
+        <i data-feather="home"></i> 
+        
+        
+        Home
+        </a>
+        
+        <a class="nav-link" href="/getting_started">
+        
+        
+        <i data-feather="play-circle"></i> 
+        
+        
+        Getting Started
+        </a>
+        
+        <a class="nav-link" href="/tutorials">
+        
+        
+        <i data-feather="star"></i> 
+        
+        
+        Tutorials
+        </a>
+        
+        <a class="nav-link" href="/resources">
+        
+        
+        <i data-feather="book"></i> 
+        
+        
+        Resources
+        </a>
+        
+        <a class="nav-link" href="/videos">
+        
+        
+        <i data-feather="youtube"></i> 
+        
+        
+        Videos
+        </a>
+        
+        <a class="nav-link" href="/contact_us">
+        
+        
+        <i data-feather="send"></i> 
+        
+        
+        Contact Qlik
+        </a>
+        
+    </nav>
+</div>
+<div class="grid">
+      <div class="unit one-third center-on-mobiles">
+        <h2>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.qlik.com/us/products">
+          
+            <img src="/images/qlik-logo-1x.png" alt="Qlik Logo" width="150" height="75">
+          </a>
+        </h2>
+      </div>
+      <h2 class="main-nav unit two-thirds align-center hide-on-mobiles"></h2>
+    </nav>
+</div><div id="content">
+<h2>Step 4 - Run Your Task</h2>
+
+<div class="page-content">
+    <div class="wrapper">
+    <section class="tutorial">
+    <div class="grid">
+    <div class="unit whole" style="text-align: left">
+          <articles>
+    <p>When you press <code>Run</code>, Replicate will automatically switch from <strong>Designer</strong> mode to <strong>Monitor</strong> mode.
+You will be able to watch the status of the full load as it occurs, and then switch to monitoring
+change data capture as well.</p>
+<p><img src="/images/kafka-task-9.png" alt="Kafka Task 9 Image"></p>
+<p>After <strong>Full Load</strong> is complete, click on the <code>Completed</code> bar to display the tables.
+There is DML activity running in the background. Click on the <code>Change Processing</code> tab to
+see it in action.</p>
+<blockquote>
+<p>Note: Changes to the tables occur somewhat randomly in the background. You may need to wait a
+few minutes before you will see changes appear in the tables that we selected.</p>
+</blockquote>
+<p><img src="/images/kafka-task-10.png" alt="Kafka Task 10 Image"></p>
+<p>If you would like to see some of the messages we are delivering to Kafka, click on the following link:</p>
+<!-- raw HTML omitted -->
+<p>This link will open another window that will display the next 200 messages we deliver to the
+<strong>testdrive</strong> topic using the Kafka &ldquo;Console Consumer&rdquo;. As you look at the messages, you will notice
+that they are in JSON format, just as we configured the Replicate Kafka target endpoint.</p>
+<p><img src="/images/kafka-show.png" alt="Kafka Show Image"></p>
+<p>When you have seen enough, you can declare Victory! for this part of the Lab. Press <code>Stop</code>
+in the top left corner of the <strong>Replicate</strong> console to end the task. After pressing <code>Stop</code> and clicking
+<code>Yes</code> in the confirmation dialog, close the <strong>MySQL to Kafka</strong> tab or click
+on the <code>TASKS</code> tab to return to the main window.</p>
+<p><img src="/images/kafka-task-11.png" alt="Kafka Task 11 Image"></p>
+<h3 id="summary">Summary</h3>
+<p>You just:</p>
+<ul>
+<li>Defined access and authentication into a MySQL source and a Kafka target</li>
+<li>Defined the source tables from which you want to create Kafka messages</li>
+<li>Configured the MySQL to Kafka task</li>
+<li>Captured  initial data from the source without while maintaining business continuity
+(DML activity was going on in the background to simulate users working on the source database)</li>
+<li>Automatically created kafka messages from the initial table state</li>
+<li>Captured all new transactions which were happening while the initial load was running</li>
+<li>Turned ll net new data into Kafka messages</li>
+<li>Observed change data being recorded as it is sent to and applied at the  target</li>
+</ul>
+<p>All that in 4 easy steps!</p>
+<p>You can now move on to the next part of the Lab.</p>
+
+    
+    </articles>
+    </div>
+    <div class="clear"></div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+
+        </div><div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>©&nbsp;2021 Qlik Technologies, Inc. All rights reserved.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>Qlik Tutorials @ Partner Engineering</p>
+    </div>
+</div><script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script></body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/screen.css">
+    <link rel="shortcut icon" href="/images/logos/qlik-icon-16.ico">
+    
+    
+    <title>AWS Immersion Day 2021 | Step 5 - Run Your Task</title>
+</head><body><div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        
+        <a class="nav-link" href="/">
+        
+        
+        <i data-feather="home"></i> 
+        
+        
+        Home
+        </a>
+        
+        <a class="nav-link" href="/getting_started">
+        
+        
+        <i data-feather="play-circle"></i> 
+        
+        
+        Getting Started
+        </a>
+        
+        <a class="nav-link" href="/tutorials">
+        
+        
+        <i data-feather="star"></i> 
+        
+        
+        Tutorials
+        </a>
+        
+        <a class="nav-link" href="/resources">
+        
+        
+        <i data-feather="book"></i> 
+        
+        
+        Resources
+        </a>
+        
+        <a class="nav-link" href="/videos">
+        
+        
+        <i data-feather="youtube"></i> 
+        
+        
+        Videos
+        </a>
+        
+        <a class="nav-link" href="/contact_us">
+        
+        
+        <i data-feather="send"></i> 
+        
+        
+        Contact Qlik
+        </a>
+        
+    </nav>
+</div>
+<div class="grid">
+      <div class="unit one-third center-on-mobiles">
+        <h2>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.qlik.com/us/products">
+          
+            <img src="/images/qlik-logo-1x.png" alt="Qlik Logo" width="150" height="75">
+          </a>
+        </h2>
+      </div>
+      <h2 class="main-nav unit two-thirds align-center hide-on-mobiles"></h2>
+    </nav>
+</div><div id="content">
+<h2>Step 5 - Run Your Task</h2>
+
+<div class="page-content">
+    <div class="wrapper">
+    <section class="tutorial">
+    <div class="grid">
+    <div class="unit whole" style="text-align: left">
+          <articles>
+    <p>After you press <code>Run</code>, Replicate will automatically switch from <strong>Designer</strong> mode to <strong>Monitor</strong> mode.
+You will be able to watch the status of the full load as it occurs, and then switch to monitoring
+change data capture as well.</p>
+<p><img src="/images/postgres-task-5.png" alt="Postgres Task 5 Image"></p>
+<p>When <strong>Full Load</strong> is complete, click on the <code>Completed</code> bar to display the tables.
+There is DML activity running in the background. Click on the <code>Change Processing</code> tab to
+see it in action.</p>
+<p><img src="/images/postgres-task-6.png" alt="Postgres Task 6 Image"></p>
+<p>If you would like to explore the data that we have delviered to Postgres, click on the folowing link:</p>
+<p><strong>http://localhost:5430</strong></p>
+<p>This link will open PGAdmin in another window in your browser. Log in with:</p>
+<ul>
+<li>User: <code>pgadmin@qlik.com</code></li>
+<li>Password: aws_immersion2021</li>
+</ul>
+<p><img src="/images/pgadmin-1.png" alt="PGAdmin 1 Image"></p>
+<p>From there, click on <code>&gt; Servers</code> in the navigation pane.</p>
+<p><img src="/images/pgadmin-2.png" alt="PGAdmin 2 Image"></p>
+<p>And then double-click on <code>PostgresDB</code> which will open a window for you to enter
+the password to log into the server.</p>
+<ul>
+<li>Make sure the login user &lsquo;qlik123&rsquo;</li>
+<li>Enter the password: Aws_immersion123</li>
+</ul>
+<p><img src="/images/pgadmin-3.png" alt="PGAdmin 3 Image"></p>
+<p>This will log you into the database. From there you can navigate to:</p>
+<pre><code>Databases =&gt; qlik =&gt; Schemas =&gt; testdrive =&gt; Tables
+</code></pre><p><img src="/images/pgadmin-4.png" alt="PGAdmin 4 Image"></p>
+<p>Feel free to explore the structure, etc. associated with the tables we have created. If you look
+at the structure for the Player table, you will see that the additional column, <strong>fullName</strong>
+that we added to the table as a part of our transformation is present in the table here.</p>
+<p>Now we will enter a couple of queries. Click on <code>Tools</code> at the top of the screen and select
+<code>Query Tool</code> to open the query editor.</p>
+<p><img src="/images/pgadmin-query-tool.png" alt="PGAdmin Query Tool Image"></p>
+<p>Now type</p>
+<p><code>select count(*) from testdrive.&quot;Player&quot;;</code></p>
+<p>Note the quotes around <strong>Player</strong> and that it begins with a capital &lsquo;P&rsquo;. The schemas are
+case-sensitive, so we need the quotes in order to find the table in the query. Highlight that
+line and press the lightning bolt at the top of the screen to execute. This will give you
+the count of rows the Player table. That vaule should be displayed in the <strong>Data Output</strong>
+area at the bottom of the screen.</p>
+<p>Next, we will query a few rows from the Player table to examine the data. Type</p>
+<p><code>select * from testdrive.&quot;Player&quot; limit 5;</code></p>
+<p>Once again, highlight that query statement and press the lightning bolt at the top
+of the screen to execute it.  Five rows should be returned in the <strong>Data Output</strong> area
+at the bottom of the screen.</p>
+<p><img src="/images/pgadmin-5.png" alt="PGAdmin 5 Image"></p>
+<p>If you scroll all the way to the right, you will see the <strong>fullName</strong> column that we created
+during the transformation. You will also note that the values set in that column are just
+as we coded them to look in the transformation.</p>
+<p><img src="/images/pgadmin-6.png" alt="PGAdmin 6 Image"></p>
+<p>When you have seen enough, you can declare Victory! for this part of the Lab. Press <code>Stop</code>
+in the top left corner of the <strong>Replicate</strong> console to end the task. After pressing <code>Stop</code>
+and clicking <code>Yes</code> in the confirmation dialog, click on the <code>TASKS</code> tab at the top of the screen.
+This will return you to the main window.</p>
+<p><img src="/images/postgres-task-7.png" alt="Postgres Task 7 Image"></p>
+<h3 id="summary">Summary</h3>
+<p>You just:</p>
+<ul>
+<li>Defined access and authentication into a source and a target database</li>
+<li>Defined the source tables you want to create and keep in sync on the target</li>
+<li>Configured the MySQL to Postgres task</li>
+<li>Configured a transformation that added a new column to the Player table</li>
+<li>Captured  initial data from the source without while maintaining business continuity
+(DML activity was going on in the background to simulate users working on the source database)</li>
+<li>Automatically created the target tables</li>
+<li>Loaded the target tables</li>
+<li>Captured all new transactions which were happening while the initial load was running</li>
+<li>Automatically began the process to apply  net new data to the target once the target was loaded</li>
+<li>Observed change data being recorded as it is sent to and applied at the  target</li>
+</ul>
+<p>All that in 5 easy steps!</p>
+<p>You can now move on to the next part of the Lab.</p>
+
+    
+    </articles>
+    </div>
+    <div class="clear"></div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+
+        </div><div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>©&nbsp;2021 Qlik Technologies, Inc. All rights reserved.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>Qlik Tutorials @ Partner Engineering</p>
+    </div>
+</div><script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script></body>
+</html>

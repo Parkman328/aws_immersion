@@ -1,0 +1,26 @@
+<div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        {{ range .Site.Menus.main }}
+        <a class="nav-link" href="{{ .URL }}">
+        {{ if .Pre }}
+        {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+        {{ $icon }}
+        {{ end }}
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
+        </a>
+        {{ end }}
+    </nav>
+</div>
+<div class="grid">
+      <div class="unit one-third center-on-mobiles">
+        <h2>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.qlik.com/us/products">
+          
+            <img src="/images/qlik-logo-1x.png" alt="Qlik Logo" width="150" height="75">
+          </a>
+        </h2>
+      </div>
+      <h2 class="main-nav unit two-thirds align-center hide-on-mobiles"></h2>
+    </nav>
+</div>

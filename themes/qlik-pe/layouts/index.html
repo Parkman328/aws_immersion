@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div id="home-jumbotron" class="jumbotron text-center">
+  <h2 class="title">{{ .Site.Title }}</h2>
+
+<div class="page-content">
+<div class="wrapper">
+<section class="tutorial">
+<div class="grid">
+<div class="unit whole" style="text-align: left">
+      <articles>
+{{ .Content }}
+
+</articles>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+
+</div>
+{{ end }}

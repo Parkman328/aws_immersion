@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/screen.css">
+    <link rel="shortcut icon" href="/images/logos/qlik-icon-16.ico">
+    
+    
+    <title>AWS Immersion Day 2021 | Step 4 - Configure a Transformation</title>
+</head><body><div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        
+        <a class="nav-link" href="/">
+        
+        
+        <i data-feather="home"></i> 
+        
+        
+        Home
+        </a>
+        
+        <a class="nav-link" href="/getting_started">
+        
+        
+        <i data-feather="play-circle"></i> 
+        
+        
+        Getting Started
+        </a>
+        
+        <a class="nav-link" href="/tutorials">
+        
+        
+        <i data-feather="star"></i> 
+        
+        
+        Tutorials
+        </a>
+        
+        <a class="nav-link" href="/resources">
+        
+        
+        <i data-feather="book"></i> 
+        
+        
+        Resources
+        </a>
+        
+        <a class="nav-link" href="/videos">
+        
+        
+        <i data-feather="youtube"></i> 
+        
+        
+        Videos
+        </a>
+        
+        <a class="nav-link" href="/contact_us">
+        
+        
+        <i data-feather="send"></i> 
+        
+        
+        Contact Qlik
+        </a>
+        
+    </nav>
+</div>
+<div class="grid">
+      <div class="unit one-third center-on-mobiles">
+        <h2>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.qlik.com/us/products">
+          
+            <img src="/images/qlik-logo-1x.png" alt="Qlik Logo" width="150" height="75">
+          </a>
+        </h2>
+      </div>
+      <h2 class="main-nav unit two-thirds align-center hide-on-mobiles"></h2>
+    </nav>
+</div><div id="content">
+<h2>Step 4 - Configure a Transformation</h2>
+
+<div class="page-content">
+    <div class="wrapper">
+    <section class="tutorial">
+    <div class="grid">
+    <div class="unit whole" style="text-align: left">
+          <articles>
+    <p>The transformation we will create in this section will:</p>
+<ul>
+<li>Add a new column <strong>fullName</strong> to the <strong>Player</strong> target table</li>
+<li>Populate that column with values from other columns in the table.</li>
+</ul>
+<p>To get started, <code>double click</code> on the <strong>Player</strong> table in the <strong>Selected Tables</strong> frame.</p>
+<p><img src="/images/xform-1.png" alt="Tranform 1 Image"></p>
+<p>Then click on the <code>Transform</code> button.</p>
+<p><img src="/images/xform-2.png" alt="Tranform 2 Image"></p>
+<p>And click on <code>Add Column</code>.</p>
+<p><img src="/images/xform-3.png" alt="Tranform 3 Image"></p>
+<p>Call the new column <code>fullName</code>,</p>
+<p><img src="/images/xform-4.png" alt="Tranform 4 Image"></p>
+<p>and change its default type from <strong>STRING(50)</strong> to <code>WSTRING(100)</code>. You can get a dropdown of
+valid types you can choose by clicking the <strong>type</strong> column next to <strong>fullName</strong>.</p>
+<p><img src="/images/xform-5.png" alt="Tranform 5 Image"></p>
+<p>Note though, that the default precision of the WSTRING type is 50 &hellip; we will need more space
+than that due to the width of some of the data we will be working with, so you will need to
+type <code>WSTRING(100)</code> into the <strong>type</strong> column.</p>
+<p><img src="/images/xform-5a.png" alt="Tranform 5a Image"></p>
+<p>Now we need to define the transformation we want to use to populate the column. Click on <code>fx</code> to
+bring up the trasformation <strong>Expression Builder</strong>.</p>
+<p><img src="/images/xform-6.png" alt="Tranform 6 Image"></p>
+<p>The expression we are going to build will involve concatenating three columns, <em>nameGiven</em>,
+<em>nameFirst</em>, and <em>nameLast</em> into a column called <em>fullName</em>. Start by double clicking
+<code>nameGiven</code> which will put <strong>$nameGiven</strong> into the expression builder.</p>
+<p><img src="/images/xform-7.png" alt="Tranform 7 Image"></p>
+<p>Now press the concatenation operator <code>||</code> and add the string `' ('.</p>
+<p><img src="/images/xform-8.png" alt="Tranform 8 Image"></p>
+<p>and repeat those steps with <code>nameFirst</code> and <code>nameLast</code> until you have an expression that looks like</p>
+<!-- raw HTML omitted -->
+<p>Note that you could just as easily have typed the the expression in directly, or even
+copied and pasted it from this web page.</p>
+<p><img src="/images/xform-9.png" alt="Tranform 9 Image"></p>
+<p>Now click the <code>Parse Expression</code> button and enter the data:</p>
+<ul>
+<li>$nameGiven: <code>first middle</code></li>
+<li>$nameFirst: <code>nickname</code></li>
+<li>$nameLast: <code>lastname</code></li>
+</ul>
+<p><img src="/images/xform-10.png" alt="Tranform 10 Image"></p>
+<p>and press the <code>Test Expression</code> button.  This process allows us to put test values in
+the columns that make up the expression and validate that the output looks as we expect it to.</p>
+<p><img src="/images/xform-11.png" alt="Tranform 11 Image"></p>
+<p>Assuming your output looks like the output indicated (<strong>first middle (nickname) lastname</strong>),
+your transformation is correct. Press <code>OK</code> to save the transfomration and return to the
+previous screen.</p>
+<p><img src="/images/xform-12.png" alt="Tranform 12 Image"></p>
+<p>You will note below that we can see that there is now an expression next to the <strong>fullName</strong> column.
+If you hover your mouse over that column you will be able to inspect the transformation without
+having to click into it. Press <code>OK</code> again to return to the previous screen.</p>
+<p><img src="/images/xform-13.png" alt="Tranform 13 Image"></p>
+<p>Notice the word <strong>(Changed)</strong> next to the <em>testdrive.Player</em> column. This indicates that
+a transformation has been defined that alters the state of the data as it moves from the
+source to the target.</p>
+<p><img src="/images/xform-14.png" alt="Tranform 14 Image"></p>
+<p>That is it for configuration. We are now ready to save our task and run it. Press <code>Save</code> at the top
+left of the window and then press <code>Run</code>.</p>
+<p><img src="/images/postgres-task-4.png" alt="Postgres Task 4 Image"></p>
+<h1 id="nextdb-run-task"><a href="../db-run-task">NEXT</a></h1>
+
+    
+    </articles>
+    </div>
+    <div class="clear"></div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+
+        </div><div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>©&nbsp;2021 Qlik Technologies, Inc. All rights reserved.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>Qlik Tutorials @ Partner Engineering</p>
+    </div>
+</div><script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script></body>
+</html>

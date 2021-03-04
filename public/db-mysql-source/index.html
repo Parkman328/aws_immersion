@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/screen.css">
+    <link rel="shortcut icon" href="/images/logos/qlik-icon-16.ico">
+    
+    
+    <title>AWS Immersion Day 2021 | Step 1 - MySQL Source Configuration</title>
+</head><body><div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        
+        <a class="nav-link" href="/">
+        
+        
+        <i data-feather="home"></i> 
+        
+        
+        Home
+        </a>
+        
+        <a class="nav-link" href="/getting_started">
+        
+        
+        <i data-feather="play-circle"></i> 
+        
+        
+        Getting Started
+        </a>
+        
+        <a class="nav-link" href="/tutorials">
+        
+        
+        <i data-feather="star"></i> 
+        
+        
+        Tutorials
+        </a>
+        
+        <a class="nav-link" href="/resources">
+        
+        
+        <i data-feather="book"></i> 
+        
+        
+        Resources
+        </a>
+        
+        <a class="nav-link" href="/videos">
+        
+        
+        <i data-feather="youtube"></i> 
+        
+        
+        Videos
+        </a>
+        
+        <a class="nav-link" href="/contact_us">
+        
+        
+        <i data-feather="send"></i> 
+        
+        
+        Contact Qlik
+        </a>
+        
+    </nav>
+</div>
+<div class="grid">
+      <div class="unit one-third center-on-mobiles">
+        <h2>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.qlik.com/us/products">
+          
+            <img src="/images/qlik-logo-1x.png" alt="Qlik Logo" width="150" height="75">
+          </a>
+        </h2>
+      </div>
+      <h2 class="main-nav unit two-thirds align-center hide-on-mobiles"></h2>
+    </nav>
+</div><div id="content">
+<h2>Step 1 - MySQL Source Configuration</h2>
+
+<div class="page-content">
+    <div class="wrapper">
+    <section class="tutorial">
+    <div class="grid">
+    <div class="unit whole" style="text-align: left">
+          <articles>
+    <p>The first thing we need to do is create a source endpoint. We do this by clicking
+the <code>Manage Endpoint Connections</code> button at the top of the screen.</p>
+<p><img src="/images/manage-endpoints.png" alt="Manage Endpoints Image"></p>
+<p>And you will see this window.</p>
+<p><img src="/images/add-new-endpoint.png" alt="Add New Endpoint Image"></p>
+<p>From there, click on <code>Add New Endpoint Connection</code> link or the <code>+ New Endpoint Connection</code> button
+at the top of the screen.</p>
+<p>Once you do that you will see this window:</p>
+<p><img src="/images/new-endpoint.png" alt="New Endpoint Image"></p>
+<p>We will now create a MySQL source endpoint:</p>
+<ul>
+<li>Replace the text <strong>New Endpoint Connection 1</strong> with something more descriptive
+like  <code>MySQL Source</code>,</li>
+<li>make sure the <code>Source</code> radio button is selected,</li>
+<li>and then select <code>MySQL</code> from the dropdown selection box.</li>
+</ul>
+<p><img src="/images/mysql-src-1.png" alt="MySQL Source 1 Image"></p>
+<p>You will notice as we proceed that the content of the configuration window is context-sensitive.</p>
+<p><img src="/images/mysql-src-2.png" alt="MySQL Source 2 Image"></p>
+<p><img src="/images/mysql-src-3.png" alt="MySQL Source 3 Image"></p>
+<p>Fill in the blanks as indicated in the images above:</p>
+<ul>
+<li>Server: <code>mysqldb</code></li>
+<li>Port: <code>3306</code></li>
+<li>User: <code>root</code></li>
+<li>Password: {% include getPassword.php %}</li>
+<li>Security/SSL Mode: <code>None</code></li>
+</ul>
+<p>and then click on <code>Test Connection</code>. Your screen should look like the following, indicating that
+your connection succeeded.</p>
+<p><img src="/images/mysql-src-4.png" alt="MySQL Source 4 Image"></p>
+<p>Assuming so, click <code>Save</code> and the configuration of your MySQL source endpoint is complete.
+Click <code>Close</code> to close the window.</p>
+<p>For more details about using MySQL as a source, please review the section
+&ldquo;Using a MyQL-Based Database as a Source&rdquo; in Chapter 8 &ldquo;Adding and Managing Source Endpoints&rdquo; of the
+<a href="/files/Qlik_Replicate_User_Guide.pdf">Qlik Replicate User Guide</a></p>
+<h1 id="nextdb-postgres-target"><a href="../db-postgres-target">NEXT</a></h1>
+
+    
+    </articles>
+    </div>
+    <div class="clear"></div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+
+        </div><div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>©&nbsp;2021 Qlik Technologies, Inc. All rights reserved.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>Qlik Tutorials @ Partner Engineering</p>
+    </div>
+</div><script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script></body>
+</html>

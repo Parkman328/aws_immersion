@@ -1,0 +1,35 @@
+baseURL = "http://localhost:80/"
+languageCode = "en-us"
+title = "AWS Immersion Day 2021"
+theme='qlik-pe'
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+   [[menu.main]]
+    name = "Getting Started"
+    pre = "play-circle"
+    url = "/getting_started"
+    weight = 2
+  [[menu.main]]
+    name = "Tutorials"
+    pre = "star"
+    url = "/tutorials"
+    weight = 3
+  [[menu.main]]
+    name = "Resources"
+    pre = "book"
+    url = "/resources"
+    weight = 4
+   [[menu.main]]
+    name = "Videos"
+    pre = "youtube"
+    url = "/videos"
+    weight = 5
+  [[menu.main]]
+    name = "Contact Qlik"
+    pre = "send"
+    url = "/contact_us"
+    weight = 6

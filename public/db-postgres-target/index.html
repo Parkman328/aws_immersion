@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/screen.css">
+    <link rel="shortcut icon" href="/images/logos/qlik-icon-16.ico">
+    
+    
+    <title>AWS Immersion Day 2021 | Step 2 - Postgres Target Configuration</title>
+</head><body><div id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        
+        <a class="nav-link" href="/">
+        
+        
+        <i data-feather="home"></i> 
+        
+        
+        Home
+        </a>
+        
+        <a class="nav-link" href="/getting_started">
+        
+        
+        <i data-feather="play-circle"></i> 
+        
+        
+        Getting Started
+        </a>
+        
+        <a class="nav-link" href="/tutorials">
+        
+        
+        <i data-feather="star"></i> 
+        
+        
+        Tutorials
+        </a>
+        
+        <a class="nav-link" href="/resources">
+        
+        
+        <i data-feather="book"></i> 
+        
+        
+        Resources
+        </a>
+        
+        <a class="nav-link" href="/videos">
+        
+        
+        <i data-feather="youtube"></i> 
+        
+        
+        Videos
+        </a>
+        
+        <a class="nav-link" href="/contact_us">
+        
+        
+        <i data-feather="send"></i> 
+        
+        
+        Contact Qlik
+        </a>
+        
+    </nav>
+</div>
+<div class="grid">
+      <div class="unit one-third center-on-mobiles">
+        <h2>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.qlik.com/us/products">
+          
+            <img src="/images/qlik-logo-1x.png" alt="Qlik Logo" width="150" height="75">
+          </a>
+        </h2>
+      </div>
+      <h2 class="main-nav unit two-thirds align-center hide-on-mobiles"></h2>
+    </nav>
+</div><div id="content">
+<h2>Step 2 - Postgres Target Configuration</h2>
+
+<div class="page-content">
+    <div class="wrapper">
+    <section class="tutorial">
+    <div class="grid">
+    <div class="unit whole" style="text-align: left">
+          <articles>
+    <p>Next we need to configure our Postgres target endpoint. The process is much the same as you saw
+with the MySQL source, and once again you will note that the configuration process is
+context-sensitive as we move along.</p>
+<p>As before, the first step in the configuration process is to tell Replicate that we want to
+create a new endpoint. If you are back on the main window, you will need to click on
+<code>Manage Endpoint Connections</code> button.</p>
+<p><img src="/images/manage-endpoints.png" alt="Manage Endpoints Image"></p>
+<p>and then press the <code>+ New Endpoint Connection</code> button.</p>
+<p><img src="/images/add-new-endpoint-2.png" alt="Manage Endpoints Image"></p>
+<p>and you will see a window that resembles this:</p>
+<p><img src="/images/new-endpoint.png" alt="New Endpoint Image"></p>
+<p>We will now create a PostgreSQL Target endpoint:</p>
+<ul>
+<li>Replace the text <strong>New Endpoint Connection 1</strong> with something more descriptive
+like  <code>Postgres Target</code>,</li>
+<li>make sure the <code>Target</code> radio button is selected,</li>
+<li>and then select <code>PostgreSQL</code> from the dropdown selection box.</li>
+</ul>
+<p><img src="/images/postgres-trg-1.png" alt="Postgres Target 1 Image"></p>
+<p><img src="/images/postgres-trg-2.png" alt="Postgres Target 2 Image"></p>
+<p>Fill in the blanks as indicated in the image above:</p>
+<ul>
+<li>Host: <code>postgresdb</code></li>
+<li>Port: <code>5432</code></li>
+<li>User: <code>qlik</code></li>
+<li>Password: {% include getPassword.php %}</li>
+<li>Database: <code>qlikdb</code></li>
+<li>Security/SSL Mode: <code>disable</code></li>
+</ul>
+<p>and then click on <code>Test Connection</code>. Your screen should look like the following, indicating that
+your connection succeeded.</p>
+<p><img src="/images/postgres-trg-3.png" alt="Postgres Target 3 Image"></p>
+<p>Assuming so, click <code>Save</code> and the configuration of your Postgres target endpoint is complete.
+Click <code>Close</code> to close the window.</p>
+<p>For more details about using PostgreSQL as a target, please review the section
+&ldquo;Using a PostgreSQL-Based as a Target&rdquo; in Chapter 9 &ldquo;Adding and Managing Target Endpoints&rdquo; of the
+<a href="/files/Qlik_Replicate_User_Guide.pdf">Qlik Replicate User Guide</a></p>
+<h1 id="nextdb-config-task"><a href="../db-config-task">NEXT</a></h1>
+
+    
+    </articles>
+    </div>
+    <div class="clear"></div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+
+        </div><div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>©&nbsp;2021 Qlik Technologies, Inc. All rights reserved.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>Qlik Tutorials @ Partner Engineering</p>
+    </div>
+</div><script src="/js/feather.min.js"></script>
+<script>
+  feather.replace()
+</script></body>
+</html>
