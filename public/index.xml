@@ -51,6 +51,16 @@ Once you are logged in you will see the main screen for Qlik Replicate.</descrip
     </item>
     
     <item>
+      <title></title>
+      <link>http://localhost:80/videos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:80/videos/</guid>
+      <description>Videos  Thanks for taking the Qlik Replicate Lab for a spin. Here are some Video resource for the Labs as well other Video Assets produced by the Qlik Team. The product documentation and help can be found at:
+ Qlik Replicate Explainer and Demo Video Qlik Replicate Real Time Data Ingestion Qlik Replicate Many to One Qlik Replicate Installation on Linux  </description>
+    </item>
+    
+    <item>
       <title>Display Kafka Messages</title>
       <link>http://localhost:80/kafka-show/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

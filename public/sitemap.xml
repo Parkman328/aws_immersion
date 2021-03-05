@@ -17,6 +17,9 @@
     <loc>http://localhost:80/tutorials/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>http://localhost:80/videos/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>http://localhost:80/categories/</loc>
   </url><url>
     <loc>http://localhost:80/kafka-show/</loc>
