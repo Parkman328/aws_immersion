@@ -2,6 +2,23 @@
 ![](/images/aws_immersion.png)  
 # Welcome to Qlik Tutorial for AWS Immersion Day 2021! 
 ________________________________________________________________
+## Agenda (10 AM - 4 PM)
+* 10AM AWS Intro – Tony Song(AWS Immersion Day Leader)
+* 10:20AM AWS content - Dilip Rajan(AWS Partner Solution Archtiect)
+* Break 
+* 11:30 Event Engine account signup (Dilip Rajan/ John Park)
+* 12: Lunch break 
+* 1pm Qlik company/product intro
+* 1:30 Qlik SaaS/product demo
+* Break
+* 2:15 Qlik lab1 - MySQL to Postgres Using Qlik Replicate
+* 2:45 Qlik lab2 - MySQL to Kafka Using Qlik Replicate
+* Break
+* 3PM Qlik lab3 - MySQL to Amazon Redshift Using Qlik Replicate
+* 3:30PM Qlik AWS Videos (SAP Analytics , AWS Sagemaker Integration to Qlik)
+* 3:45PM wrap up & AWS event survey
+ 
+
 
 __The Objective of this tutorial is to get introductory hands-on experience using Qlik Data Integration Tools not to become an expert at using Qlik Replicate.__
 

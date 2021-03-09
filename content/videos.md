@@ -2,7 +2,7 @@
 ______________
 
 ## Thanks for taking the Qlik Replicate Lab for a spin. Here are some Video resource for the Labs as well other Video Assets produced by the Qlik Team.
-## The product documentation and help can be found at:
+# The product documentation and help can be found at:
 
 - ## [Qlik Replicate Explainer and Demo Video](https://youtu.be/3UBa5WgOfio)
 - ## [Qlik Replicate Real Time Data Ingestion](https://youtu.be/qU7tF7npJt0)
