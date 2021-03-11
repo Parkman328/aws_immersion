@@ -2,7 +2,7 @@
 ![](/images/aws_immersion.png)  
 # Welcome to Qlik Tutorial for AWS Immersion Day 2021! 
 ________________________________________________________________
-## Agenda (10 AM - 4 PM)
+## Agenda (10 AM - 3:30 PM)
 * **10:00 am** AWS Introduction – Tony Song(AWS Immersion Day Leader)
 * **10:20 am** AWS content - Dilip Rajan(AWS Partner Solution Archtiect)
 * **Break** 
