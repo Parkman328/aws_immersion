@@ -2,7 +2,7 @@
 
 # AWS Partner Team
 - *Ian Mercer, Global Partner Development Manager - ianmer@amazon.com* 
-- *Dilip Rajan Park, Partner Solution Architect - rajand@amazon.com* 
+- *Dilip Rajan, Partner Solution Architect - rajand@amazon.com* 
 - *Tony Song Sr. ISV Partner Success Architect - tonysong@amazon.com*
 
 # Qlik Partner Team
