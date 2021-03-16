@@ -5,10 +5,10 @@ ________________________________________________________________
 ## Agenda (10 AM - 3:30 PM)
 * **10:00 am** Welcome & AWS Introduction – Tony Song (AWS Immersion Day Leader)
 * **10:20 am** The Lake House architecture: the right tool for the right job - Dilip Rajan (AWS Partner Solution Architect)
-* Break
+* **Break**
 * **11:30 am** Deliver real-time, Active Intelligence – Qlik Introduction  
     * **Demo:** Unlock your SAP data for Cloud Analytics
-* Lunch Break
+* **Lunch Break**
 * **1:00 pm** Event Engine account signup - Dilip Rajan, John Park (Solution Architect, Qlik)
 * **1:20 pm Qlik Lab1** - MySQL to Postgres Using Qlik Replicate
 * **1:45 pm Qlik Lab2** - MySQL to Kafka Using Qlik Replicate
