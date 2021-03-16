@@ -5,21 +5,19 @@ ________________________________________________________________
 ## Agenda (10 AM - 3:30 PM)
 * **10:00 am** Welcome & AWS Introduction – Tony Song (AWS Immersion Day Leader)
 * **10:20 am** The Lake House architecture: the right tool for the right job - Dilip Rajan (AWS Partner Solution Architect)
+* Break
+* **11:30 am** Deliver real-time, Active Intelligence – Qlik Introduction  
+    * **Demo:** Unlock your SAP data for Cloud Analytics
+* Lunch Break
+* **1:00 pm** Event Engine account signup - Dilip Rajan, John Park (Solution Architect, Qlik)
+* **1:20 pm Qlik Lab1** - MySQL to Postgres Using Qlik Replicate
+* **1:45 pm Qlik Lab2** - MySQL to Kafka Using Qlik Replicate
 * **Break**
-* **11:30 am** Presentation - Deliver real-time, Active Intelligence – Qlik Platform Introduction  
-    * Unlock your SAP data for Cloud analytics
-* **12:00 pm** Lunch Break
-* **1:00 pm  1:20 pm**
-* **Break**
-* **Event Engine account signup** - Dilip Rajan, John Park (Solution Architect, Qlik)
-* **1:55 pm** Qlik lab1 - MySQL to Postgres Using Qlik Replicate
-* **2:15 pm** Qlik lab2 - MySQL to Kafka Using Qlik Replicate
-* **Break**
-* **2:45 pm** Qlik lab3 - MySQL to Amazon Redshift Using Qlik Replicate
-* **3:05 pm Demos:**
-    * Modern, AI-powered analytics: Qlik Sense Saas product demo - Dalton Ruer (Solution Architect, Qlik)
-    * Machine Learning Evolved - AWS SageMaker Integration to Qlik
-* **3:20 pm** Wrap up & AWS event survey
+* **2:20 pm Qlik Lab3** - MySQL to Amazon Redshift Using Qlik Replicate
+* **2:40 pm**
+    * **Demo:** Machine Learning Evolved - AWS SageMaker Integration to Qlik – John Park(Solution Architect, Qlik)
+    * **Demo:** Modern, AI-powered analytics: Qlik Sense Saas - Dalton Ruer (Solution Architect, Qlik)
+* **3:00 pm** Wrap up & AWS event survey
 
 
 __The Objective of this tutorial is to get introductory hands-on experience using Qlik Data Integration Tools not to become an expert at using Qlik Replicate.__
