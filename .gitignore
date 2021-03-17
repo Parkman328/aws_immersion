@@ -1,3 +1,10 @@
 *.gz
 *.tar*
 /cloudformation
+docker-compose/docker-compose.yml
+.gitignore
+docker-compose/backup/docker2
+.gitignore
+.gitignore
+docker-compose/.env
+/public/*
