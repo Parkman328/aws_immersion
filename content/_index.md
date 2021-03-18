@@ -3,21 +3,21 @@
 # Welcome to Qlik Tutorial for AWS Immersion Day 2021! 
 ________________________________________________________________
 ## Agenda (10 AM - 3:30 PM)
-* **10:00 am** Welcome & AWS Introduction – Tony Song (AWS Immersion Day Leader)
-* **10:20 am** The Lake House architecture: the right tool for the right job - Dilip Rajan (AWS Partner Solution Architect)
-* **Break**
-* **11:30 am** Deliver real-time, Active Intelligence – Qlik Introduction  
+* **10:00 am** Welcome & AWS Introduction - Tony Song (Immersion Day Leader, AWS)
+* **10:20 am** The Lake House architecture: the right tool for the right job - Dilip Rajan (Partner Solution Architect, AWS)
+* **11:00 am** Deliver real-time, Active Intelligence – Qlik Introduction  
     * **Demo:** Unlock your SAP data for Cloud Analytics
-* **Lunch Break**
+* **11:35 pm Qlik Demo Lab1** - MySQL to Postgres Using Qlik Replicate
+* **12:00 pm** - **Lunch Break**
 * **1:00 pm** Event Engine account signup - Dilip Rajan, John Park (Solution Architect, Qlik)
-* **1:20 pm Qlik Lab1** - MySQL to Postgres Using Qlik Replicate
-* **1:45 pm Qlik Lab2** - MySQL to Kafka Using Qlik Replicate
-* **Break**
-* **2:20 pm Qlik Lab3** - MySQL to Amazon Redshift Using Qlik Replicate
-* **2:40 pm**
-    * **Demo:** Machine Learning Evolved - AWS SageMaker Integration to Qlik – John Park(Solution Architect, Qlik)
+* **1:20 pm Qlik Lab2** - MySQL to Kafka Using Qlik Replicate
+* **1:40 pm Qlik Lab3** - MySQL to Amazon Redshift Using Qlik Replicate
+* **2:00 pm** - **Qlik Data Integration**
+    * **Demo:** Agile data warehouse automation - Qlik Compose - John Park(Solution Architect, Qlik)
+* **2:10 pm** - **Qlik Data Analytics**
+    * **Demo:** Machine learning evolved - AWS SageMaker Integration to Qlik – John Park(Solution Architect, Qlik)
     * **Demo:** Modern, AI-powered analytics: Qlik Sense Saas - Dalton Ruer (Solution Architect, Qlik)
-* **3:00 pm** Wrap up & AWS event survey
+* **2:30 pm** Wrap up & AWS event survey
 
 
 __The Objective of this tutorial is to get introductory hands-on experience using Qlik Data Integration Tools not to become an expert at using Qlik Replicate.__

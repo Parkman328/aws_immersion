@@ -19,12 +19,12 @@ see it in action.
 
 If you would like to explore the data that we have delviered to Postgres, click on the folowing link:
 
-__http://localhost:5430__
+__http://<your_ip_address>:5430__
 
 This link will open PGAdmin in another window in your browser. Log in with:
 
 * User: `pgadmin@qlik.com`
-* Password: aws_immersion2021
+* Password: `Aws_immersion`
 
 ![PGAdmin 1 Image](/images/pgadmin-1.png)
 

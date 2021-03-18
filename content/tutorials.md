@@ -5,8 +5,9 @@
 First things first, we need to open Qlik Replicate. Open Replicate  in a new tab in your broswer. 
 For host username and password please refer to [GettingStarted Page](../getting_started)
 
-*****__Please note that you may need to press accept security and proceed for certificate__*****
+#### *****__Please note that you may need to press accept security and proceed for certificate__*****
 
+  
 Once you are logged in you will see the main screen for Qlik Replicate.
 
 ![](/images/attunityreplicate.jpg)

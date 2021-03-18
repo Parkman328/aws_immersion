@@ -35,10 +35,10 @@ like  `Postgres Target`,
 ![Postgres Target 2 Image](/images/postgres-trg-2.png)
 
 Fill in the blanks as indicated in the image above:
-* Host: `postgresdb`
+* Host: `localhost`
 * Port: `5432`
-* User: `qlik`
-* Password: {% include getPassword.php %}
+* User: `qlik123`
+* Password: `Aws_immersion123`
 * Database: `qlikdb`
 * Security/SSL Mode: `disable`
 

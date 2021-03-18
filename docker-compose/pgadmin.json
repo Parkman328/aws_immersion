@@ -1,0 +1,13 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "PostgresDB",
+            "Group": "Servers",
+            "Port": 5432,
+            "Username": "qlik",
+            "Host": "localhost",
+            "SSLMode": "disable",
+            "MaintenanceDB": "postgres"
+        }
+    }
+}

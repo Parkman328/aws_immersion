@@ -36,10 +36,10 @@ You will notice as we proceed that the content of the configuration window is co
 ![MySQL Source 3 Image](/images/mysql-src-3.png)
 
 Fill in the blanks as indicated in the images above:
-* Server: `mysqldb`
+* Server: ``
 * Port: `3306`
 * User: `root`
-* Password: {% include getPassword.php %}
+* Password: `Aws_immersion123`
 * Security/SSL Mode: `None`
 
 and then click on `Test Connection`. Your screen should look like the following, indicating that
