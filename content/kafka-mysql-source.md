@@ -11,7 +11,7 @@ that is fine. Simply navigate to the instructions for creating the
 [MySQL Source Configuration]({{ base }}{% link _replicate/tutorial/db-mysql-source.md %}) 
 in the Database-to-Database use case and then return here to continue with this Kafka use case.
 
-![MySQL Source 5 Image](/images/mysql-src-5.png)
+![MySQL Source 5 Image](/images/mysql-src-3.png)
 
 Feel free to `Test Connection` to ensure that everything is still OK with the MySQL source connection 
 if you wish. To do this, click on `Manage Endpoint Connections...` and then select the MySQL source

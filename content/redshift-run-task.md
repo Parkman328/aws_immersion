@@ -19,49 +19,69 @@ see it in action.
 
 If you would like to explore the data that we have delviered to Postgres, click on the folowing link:
 
-__http://<your_ip_address>:3000__
+__http://<your_ip_address>:5430__
 
 This link will open PGAdmin in another window in your browser. Log in with:
 
-* User: `admin@qlik.com`
-* Password: `Aws_immersion123`
+* User: `pgadmin@qlik.com`
+* Password: `Aws_immersion`
 
-From there, click on drop down bar in the navigation pane.
-You will see `mysql-src-database` as preconfigured and `postgres-tgt-database` in configuration menu
+![PGAdmin 1 Image](/images/pgadmin-1.png)
+
+From there, click on `> Servers` in the navigation pane.
 
 ![PGAdmin 2 Image](/images/pgadmin-2.png)
 
-Drop down to 'postgres-tgt-database` which will authenticate and bring up the database catalog
+And then double-click on `PostgresDB` which will open a window for you to enter 
+the password to log into the server.
 
-You can run any query on testdrive tables and see the new data that was loaded.
+* Make sure the login user 'qlik123'
+* Enter the password: Aws_immersion123
 
-**You can run sample query** 
+![PGAdmin 3 Image](/images/pgadmin-3.png)
 
-- Execute Query Such as "select * from testdrive."Batting"
+This will log you into the database. From there you can navigate to:
 
-- Also Configure a Quick Widget to see the values in postgres Tables
+```
+Databases => qlik => Schemas => testdrive => Tables
+```
 
-Feel free to explore the structure, etc. associated with the tables we have created. 
+![PGAdmin 4 Image](/images/pgadmin-4.png)
 
-Now we will enter a couple of queries. Click on `Black Canvas' on the  screen and select 
+Feel free to explore the structure, etc. associated with the tables we have created. If you look
+at the structure for the Player table, you will see that the additional column, **fullName** 
+that we added to the table as a part of our transformation is present in the table here.
+
+Now we will enter a couple of queries. Click on `Tools` at the top of the screen and select
+`Query Tool` to open the query editor. 
+
+![PGAdmin Query Tool Image](/images/pgadmin-query-tool.png)
 
 Now type 
 
 `select count(*) from testdrive."Player";`
 
 Note the quotes around **Player** and that it begins with a capital 'P'. The schemas are 
-case-sensitive, so we need the quotes in order to find the table in the query. 
-
-Press "Run" button on top rigt of the screen to execute. This will give you 
-the count of rows the Player table. That vaule should be displayed in the **Count** 
+case-sensitive, so we need the quotes in order to find the table in the query. Highlight that 
+line and press the lightning bolt at the top of the screen to execute. This will give you 
+the count of rows the Player table. That vaule should be displayed in the **Data Output** 
 area at the bottom of the screen.
 
 Next, we will query a few rows from the Player table to examine the data. Type 
 
 `select * from testdrive."Player" limit 5;` 
 
-Once again press "Run" Button on Top Right of the screen to execute it.  Five rows should be returned in the **Output** area at the bottom of the screen.
+Once again, highlight that query statement and press the lightning bolt at the top
+of the screen to execute it.  Five rows should be returned in the **Data Output** area 
+at the bottom of the screen.
+
 ![PGAdmin 5 Image](/images/pgadmin-5.png)
+
+If you scroll all the way to the right, you will see the **fullName** column that we created
+during the transformation. You will also note that the values set in that column are just
+as we coded them to look in the transformation.
+
+![PGAdmin 6 Image](/images/pgadmin-6.png)
 
 When you have seen enough, you can declare Victory! for this part of the Lab. Press `Stop`
 in the top left corner of the **Replicate** console to end the task. After pressing `Stop` 
@@ -75,6 +95,7 @@ You just:
 * Defined access and authentication into a source and a target database
 * Defined the source tables you want to create and keep in sync on the target
 * Configured the MySQL to Postgres task
+* Configured a transformation that added a new column to the Player table
 * Captured  initial data from the source without while maintaining business continuity
   (DML activity was going on in the background to simulate users working on the source database)
 * Automatically created the target tables

@@ -2,10 +2,11 @@
 
 ### Log In to Qlik Replicate to Start the Tutorial
 
-First things first, we need to open Qlik Replicate. Open Replicate  in a new tab in your broswer. 
-For host username and password please refer to [GettingStarted Page](../getting_started)
+First things first, we need to open Qlik Replicate. 
 
-#### *****__Please note that you may need to press accept security and proceed for certificate__*****
+   1.Open Replicate  in a new tab in your broswer. 
+   2.For url, username and password please refer to [GettingStarted Page](../getting_started)
+   -  Please note that you may need to press accept security and proceed 
 
   
 Once you are logged in you will see the main screen for Qlik Replicate.
@@ -21,7 +22,7 @@ to a particular section of the lab you can navigate via the table of contents li
 
 ### Tutorial Table of Content
 
-__Lab 1 - MySQL to Postgres__
+__Qlik Lab 1 - MySQL to Postgres in RealTime__
 
    1. [Step 1 - MySQL Source Configuration](../db-mysql-source)
    2. [Step 2 - Postgres Target Configuration](../db-postgres-target)
@@ -29,7 +30,7 @@ __Lab 1 - MySQL to Postgres__
    4. [Step 4 - Configure a Transformation](../db-config-xform)
    5. [Step 5 - Run Your Task](../db-run-task)
 
-__Lab 2 - MySQL to Kafka__
+__Qlik Lab 2 - MySQL to Kafka in RealTime__
 
    1. [Step 1 - MySQL Source Configuration](../kafka-mysql-source)
    2. [Step 2 - Kafka Target Configuration](../kafka-target)
@@ -37,6 +38,17 @@ __Lab 2 - MySQL to Kafka__
    4. [Step 4 - Run Your Task](../kafka-run-task)
 
 
-Click here to  [Start Lab1 - MySQL to Postgres](../db-mysql-source)  
+__Qlik Lab 3 - MySQL to Amazon Redshift in RealTime__
+
+   1. [Step 1 - MySQL Source Configuration](../db-mysql-source)
+   2. [Step 2 - Amazon Redshift Target Configuration](../db-postgres-target)
+   3. [Step 3 - Configure Your Task](../db-config-task)
+   4. [Step 4 - Configure a Transformation](../db-config-xform)
+   5. [Step 5 - Run Your Task](../db-run-task)
+
+
+Click here to [Start Lab1 - MySQL to Postgres](../db-mysql-source)  
 
 Click here to [Start Lab2 - MySQL to Kafka](../kafka-mysql-source)
+
+Click here to [Start Lab3 - MySQL to Amazon Redshift](../redshift-mysql-source)  

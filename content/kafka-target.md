@@ -41,12 +41,12 @@ like  `Kafka JSON Target`,
 ![Kafka Target 5 Image](/images/kafka-trg-5.png)
 
 Fill in the blanks as indicated in the images above:
-* Broker servers: `kafka:29092`
+* Broker servers: `localhost:29092`
 * Security/Use SSL: `NOT checked`
 * Security/Authentication: `None`
 * Message Properties/Format: `JSON`
 * Message Properties/Compression: `None`
-* Data Message Publishing/Specific topic: `testdrive`
+* Data Message Publishing/Specific topic: `Seperate topic for each table`
 * Data Message Publishing/Partition strategy: `By message key`
 * Data Message Publishing/Message key: `Primary key columns`
 * Metadata Message Publishing/Publish: `Do not publish metadata messages`

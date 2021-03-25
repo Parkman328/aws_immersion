@@ -22,9 +22,8 @@
       
       <guid>http://localhost:80/getting_started/</guid>
       <description>Preface Before beginning with the tutorial we like to tell you that your Qlik and AWS team is there to help you please do not hesitate to reach out.
-Before starting tutorial and labs make sure you can log into the following
-Connecting to Qlik Replicate Web UI   url:__https://your_host_ip:3552/attunityreplicate/ User Name: admin Password: Aws_immersion123
-  For the lab we will not be using a certificate rather we will &amp;lsquo;accept risk and proceed on&amp;rsquo;</description>
+This lab consist of many components to demonstrate for you how easy it is to create connections in Qlik Replicate
+ Stream Data to another Database Stream Data to Kafka Queue Stream Data into Cloud Data Warehouse  Inside your aws account a CloudFormation script ran and created a environment where you have a EC2 instance with Docker Compose environment that is running that has SQLPad, MySQL, Postgres, Kafdrop.</description>
     </item>
     
     <item>
@@ -43,9 +42,9 @@ Qlik Replicate Offline User Guide) - PDF Help Guide for Qlik Replicate</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/tutorials/</guid>
-      <description>AWS Immersion Day 2021 Tutorials Log In to Qlik Replicate to Start the Tutorial First things first, we need to open Qlik Replicate. Open Replicate in a new tab in your broswer. For host username and password please refer to GettingStarted Page
-Please note that you may need to press accept security and proceed for certificate
-Once you are logged in you will see the main screen for Qlik Replicate.</description>
+      <description>AWS Immersion Day 2021 Tutorials Log In to Qlik Replicate to Start the Tutorial First things first, we need to open Qlik Replicate.
+1.Open Replicate in a new tab in your broswer. 2.For url, username and password please refer to GettingStarted Page
+ Please note that you may need to press accept security and proceed  Once you are logged in you will see the main screen for Qlik Replicate.</description>
     </item>
     
     <item>
@@ -91,6 +90,19 @@ Feel free to Test Connection to ensure that everything is still OK with the MySQ
     </item>
     
     <item>
+      <title>Step 1 - MySQL Source Configuration</title>
+      <link>http://localhost:80/redshift-mysql-source/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:80/redshift-mysql-source/</guid>
+      <description>The first thing we need to do is create a source endpoint. We do this by clicking the Manage Endpoint Connections button at the top of the screen.
+And you will see this window.
+From there, click on Add New Endpoint Connection link or the + New Endpoint Connection button at the top of the screen.
+Once you do that you will see this window:
+We will now create a MySQL source endpoint:</description>
+    </item>
+    
+    <item>
       <title>Step 2 - Kafka Target Configuration</title>
       <link>http://localhost:80/kafka-target/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -106,6 +118,16 @@ As before, the first step in the configuration process is to tell Replicate that
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/db-postgres-target/</guid>
+      <description>Next we need to configure our Postgres target endpoint. The process is much the same as you saw with the MySQL source, and once again you will note that the configuration process is context-sensitive as we move along.
+As before, the first step in the configuration process is to tell Replicate that we want to create a new endpoint. If you are back on the main window, you will need to click on Manage Endpoint Connections button.</description>
+    </item>
+    
+    <item>
+      <title>Step 2 - Postgres Target Configuration</title>
+      <link>http://localhost:80/redshift-target/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:80/redshift-target/</guid>
       <description>Next we need to configure our Postgres target endpoint. The process is much the same as you saw with the MySQL source, and once again you will note that the configuration process is context-sensitive as we move along.
 As before, the first step in the configuration process is to tell Replicate that we want to create a new endpoint. If you are back on the main window, you will need to click on Manage Endpoint Connections button.</description>
     </item>
@@ -131,11 +153,35 @@ As before, the first step in the configuration process is to tell Replicate that
     </item>
     
     <item>
+      <title>Step 3 - Configure Your Task</title>
+      <link>http://localhost:80/redshift-config-task/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:80/redshift-config-task/</guid>
+      <description>Now that we have configured our MySQL source and Postgres target endpoints, we need to tie them together in what we call a Replicate task. In short, a task defines the following:
+ A source endpoint A target endpoint The list of tables that we want to capture Any transformations we want to make on the data  To get started, we need to create a task. Click on the + New Task button at the top of the screen.</description>
+    </item>
+    
+    <item>
       <title>Step 4 - Configure a Transformation</title>
       <link>http://localhost:80/db-config-xform/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/db-config-xform/</guid>
+      <description>The transformation we will create in this section will:
+ Add a new column fullName to the Player target table Populate that column with values from other columns in the table.  To get started, double click on the Player table in the Selected Tables frame.
+Then click on the Transform button.
+And click on Add Column.
+Call the new column fullName,
+and change its default type from STRING(50) to WSTRING(100).</description>
+    </item>
+    
+    <item>
+      <title>Step 4 - Configure a Transformation</title>
+      <link>http://localhost:80/redshift-config-xform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:80/redshift-config-xform/</guid>
       <description>The transformation we will create in this section will:
  Add a new column fullName to the Player target table Populate that column with values from other columns in the table.  To get started, double click on the Player table in the Selected Tables frame.
 Then click on the Transform button.
@@ -160,6 +206,16 @@ After Full Load is complete, click on the Completed bar to display the tables. T
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/db-run-task/</guid>
+      <description>After you press Run, Replicate will automatically switch from Designer mode to Monitor mode. You will be able to watch the status of the full load as it occurs, and then switch to monitoring change data capture as well.
+When Full Load is complete, click on the Completed bar to display the tables. There is DML activity running in the background. Click on the Change Processing tab to see it in action.</description>
+    </item>
+    
+    <item>
+      <title>Step 5 - Run Your Task</title>
+      <link>http://localhost:80/redshift-run-task/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:80/redshift-run-task/</guid>
       <description>After you press Run, Replicate will automatically switch from Designer mode to Monitor mode. You will be able to watch the status of the full load as it occurs, and then switch to monitoring change data capture as well.
 When Full Load is complete, click on the Completed bar to display the tables. There is DML activity running in the background. Click on the Change Processing tab to see it in action.</description>
     </item>

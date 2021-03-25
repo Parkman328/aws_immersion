@@ -81,10 +81,6 @@ At this point we could define transformations on the selected tables if we wante
 keep it simple for this part of the Lab and move the data as is instead ... so just push `OK` 
 at the bottom of the screen.  
 
-> Note: we did configure a transformation in the database-to-database section. You can 
-refer to [Configure a Transformation]({{ base }}/replicate/tutorial/db-config-xform.php) for
-more information if you skipped it.
-
 
 ![Kafka Task 7 Image](/images/kafka-task-7.png)
 

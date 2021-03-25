@@ -96,48 +96,39 @@ There is DML activity running in the background. Click on the <code>Change Proce
 see it in action.</p>
 <p><img src="/images/postgres-task-6.png" alt="Postgres Task 6 Image"></p>
 <p>If you would like to explore the data that we have delviered to Postgres, click on the folowing link:</p>
-<p><strong>http://localhost:5430</strong></p>
+<p><strong>http://&lt;your_ip_address&gt;:3000</strong></p>
 <p>This link will open PGAdmin in another window in your browser. Log in with:</p>
 <ul>
-<li>User: <code>pgadmin@qlik.com</code></li>
-<li>Password: aws_immersion2021</li>
+<li>User: <code>admin@qlik.com</code></li>
+<li>Password: <code>Aws_immersion123</code></li>
 </ul>
-<p><img src="/images/pgadmin-1.png" alt="PGAdmin 1 Image"></p>
-<p>From there, click on <code>&gt; Servers</code> in the navigation pane.</p>
+<p>From there, click on drop down bar in the navigation pane.
+You will see <code>mysql-src-database</code> as preconfigured and <code>postgres-tgt-database</code> in configuration menu</p>
 <p><img src="/images/pgadmin-2.png" alt="PGAdmin 2 Image"></p>
-<p>And then double-click on <code>PostgresDB</code> which will open a window for you to enter
-the password to log into the server.</p>
+<p>Drop down to &lsquo;postgres-tgt-database` which will authenticate and bring up the database catalog</p>
+<p>You can run any query on testdrive tables and see the new data that was loaded.</p>
+<p><strong>You can run sample query</strong></p>
 <ul>
-<li>Make sure the login user &lsquo;qlik123&rsquo;</li>
-<li>Enter the password: Aws_immersion123</li>
+<li>
+<p>Execute Query Such as &ldquo;select * from testdrive.&ldquo;Batting&rdquo;</p>
+</li>
+<li>
+<p>Also Configure a Quick Widget to see the values in postgres Tables</p>
+</li>
 </ul>
-<p><img src="/images/pgadmin-3.png" alt="PGAdmin 3 Image"></p>
-<p>This will log you into the database. From there you can navigate to:</p>
-<pre><code>Databases =&gt; qlik =&gt; Schemas =&gt; testdrive =&gt; Tables
-</code></pre><p><img src="/images/pgadmin-4.png" alt="PGAdmin 4 Image"></p>
-<p>Feel free to explore the structure, etc. associated with the tables we have created. If you look
-at the structure for the Player table, you will see that the additional column, <strong>fullName</strong>
-that we added to the table as a part of our transformation is present in the table here.</p>
-<p>Now we will enter a couple of queries. Click on <code>Tools</code> at the top of the screen and select
-<code>Query Tool</code> to open the query editor.</p>
-<p><img src="/images/pgadmin-query-tool.png" alt="PGAdmin Query Tool Image"></p>
+<p>Feel free to explore the structure, etc. associated with the tables we have created.</p>
+<p>Now we will enter a couple of queries. Click on `Black Canvas&rsquo; on the  screen and select</p>
 <p>Now type</p>
 <p><code>select count(*) from testdrive.&quot;Player&quot;;</code></p>
 <p>Note the quotes around <strong>Player</strong> and that it begins with a capital &lsquo;P&rsquo;. The schemas are
-case-sensitive, so we need the quotes in order to find the table in the query. Highlight that
-line and press the lightning bolt at the top of the screen to execute. This will give you
-the count of rows the Player table. That vaule should be displayed in the <strong>Data Output</strong>
+case-sensitive, so we need the quotes in order to find the table in the query.</p>
+<p>Press &ldquo;Run&rdquo; button on top rigt of the screen to execute. This will give you
+the count of rows the Player table. That vaule should be displayed in the <strong>Count</strong>
 area at the bottom of the screen.</p>
 <p>Next, we will query a few rows from the Player table to examine the data. Type</p>
 <p><code>select * from testdrive.&quot;Player&quot; limit 5;</code></p>
-<p>Once again, highlight that query statement and press the lightning bolt at the top
-of the screen to execute it.  Five rows should be returned in the <strong>Data Output</strong> area
-at the bottom of the screen.</p>
-<p><img src="/images/pgadmin-5.png" alt="PGAdmin 5 Image"></p>
-<p>If you scroll all the way to the right, you will see the <strong>fullName</strong> column that we created
-during the transformation. You will also note that the values set in that column are just
-as we coded them to look in the transformation.</p>
-<p><img src="/images/pgadmin-6.png" alt="PGAdmin 6 Image"></p>
+<p>Once again press &ldquo;Run&rdquo; Button on Top Right of the screen to execute it.  Five rows should be returned in the <strong>Output</strong> area at the bottom of the screen.
+<img src="/images/pgadmin-5.png" alt="PGAdmin 5 Image"></p>
 <p>When you have seen enough, you can declare Victory! for this part of the Lab. Press <code>Stop</code>
 in the top left corner of the <strong>Replicate</strong> console to end the task. After pressing <code>Stop</code>
 and clicking <code>Yes</code> in the confirmation dialog, click on the <code>TASKS</code> tab at the top of the screen.
@@ -149,7 +140,6 @@ This will return you to the main window.</p>
 <li>Defined access and authentication into a source and a target database</li>
 <li>Defined the source tables you want to create and keep in sync on the target</li>
 <li>Configured the MySQL to Postgres task</li>
-<li>Configured a transformation that added a new column to the Player table</li>
 <li>Captured  initial data from the source without while maintaining business continuity
 (DML activity was going on in the background to simulate users working on the source database)</li>
 <li>Automatically created the target tables</li>

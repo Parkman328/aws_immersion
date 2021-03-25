@@ -36,7 +36,7 @@ You will notice as we proceed that the content of the configuration window is co
 ![MySQL Source 3 Image](/images/mysql-src-3.png)
 
 Fill in the blanks as indicated in the images above:
-* Server: `127.0.0.1`
+* Server: ``
 * Port: `3306`
 * User: `root`
 * Password: `Aws_immersion123`
