@@ -21,7 +21,7 @@ see it in action.
 
 If you would like to explore the data that we have delviered to Postgres, go to the folowing link:
 
-__http://<your_ip_address>:3000__
+__http://YOUR_SERVER_IP_ADDRESS:3000__
 
 This link will open SQLPad in another window in your browser. Log in with:
 
@@ -39,7 +39,7 @@ You can run any query on testdrive tables and see the new data that was loaded.
 
 **You can run sample query** 
 
-- Execute Query Such as "select * from testdrive."Batting"
+- Execute Query Such as `select * from testdrive."Batting";`
 
 ![SQLPad2 Image](/images/prod/sqlpad2.png)
 
@@ -51,7 +51,7 @@ You can run any query on testdrive tables and see the new data that was loaded.
 
 Feel free to explore the structure, etc. associated with the tables we have created. 
 
-Now we will enter a couple of queries. Click on `Black Canvas' on the  screen and select 
+Now we will enter a couple of queries.
 
 Now type 
 

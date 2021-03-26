@@ -47,6 +47,15 @@
         Resources
         </a>
         
+        <a class="nav-link" href="/faq">
+        
+        
+        <i data-feather="help-circle"></i> 
+        
+        
+        FAQ
+        </a>
+        
         <a class="nav-link" href="/videos">
         
         
@@ -88,10 +97,16 @@
     <div class="unit whole" style="text-align: left">
           <articles>
     <p>When you press <code>Run</code>, Replicate will automatically switch from <strong>Designer</strong> mode to <strong>Monitor</strong> mode.
-You will be able to watch the status of the full load as it occurs, and then switch to monitoring
-change data capture as well.</p>
+You will be able to watch the status of the full load as it occurs, and then switch to monitoring</p>
 <p><img src="/images/kafka-task-9.png" alt="Kafka Task 9 Image"></p>
-<p>After <strong>Full Load</strong> is complete, click on the <code>Completed</code> bar to display the tables.
+<p>While Monitoring login to Kafdrop and take a look. url:YOUR_SERVER_IP_ADDRESS:9000
+Initially you will not see your Kafka Topics after a few second you see it populate from Mysql via Qlik Replicate.</p>
+<p>Pre-Load:</p>
+<p><img src="/images/prod/kafdrop.png" alt="Kafdrop 1"></p>
+<p>After Initial Load</p>
+<p><img src="/images/prod/kafdrop1.png" alt="Kafdrop 1"></p>
+<p>Now switchback to Qlik Replicate Task manager.
+After <strong>Full Load</strong> is complete, click on the <code>Completed</code> bar to display the tables.
 There is DML activity running in the background. Click on the <code>Change Processing</code> tab to
 see it in action.</p>
 <blockquote>
@@ -99,12 +114,8 @@ see it in action.</p>
 few minutes before you will see changes appear in the tables that we selected.</p>
 </blockquote>
 <p><img src="/images/kafka-task-10.png" alt="Kafka Task 10 Image"></p>
-<p>If you would like to see some of the messages we are delivering to Kafka, click on the following link:</p>
-<!-- raw HTML omitted -->
-<p>This link will open another window that will display the next 200 messages we deliver to the
-<strong>testdrive</strong> topic using the Kafka &ldquo;Console Consumer&rdquo;. As you look at the messages, you will notice
-that they are in JSON format, just as we configured the Replicate Kafka target endpoint.</p>
-<p><img src="/images/kafka-show.png" alt="Kafka Show Image"></p>
+<p>If you would like to see some of the messages we are delivering to Kafka log on to Kafdrop and click on Topics to view the messages.</p>
+<p><img src="/images/prod/kafdrop2.png" alt="Kafka Show Image"></p>
 <p>When you have seen enough, you can declare Victory! for this part of the Lab. Press <code>Stop</code>
 in the top left corner of the <strong>Replicate</strong> console to end the task. After pressing <code>Stop</code> and clicking
 <code>Yes</code> in the confirmation dialog, close the <strong>MySQL to Kafka</strong> tab or click

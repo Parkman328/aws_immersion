@@ -7,10 +7,22 @@ permalink: /replicate/tutorial/kafka-run-task.php
 
 When you press `Run`, Replicate will automatically switch from **Designer** mode to **Monitor** mode. 
 You will be able to watch the status of the full load as it occurs, and then switch to monitoring 
-change data capture as well.
 
 ![Kafka Task 9 Image](/images/kafka-task-9.png)
 
+While Monitoring login to Kafdrop and take a look. url:YOUR_SERVER_IP_ADDRESS:9000
+Initially you will not see your Kafka Topics after a few second you see it populate from Mysql via Qlik Replicate.
+
+Pre-Load:
+
+![Kafdrop 1](/images/prod/kafdrop.png)
+
+After Initial Load
+
+![Kafdrop 1](/images/prod/kafdrop1.png)
+
+
+Now switchback to Qlik Replicate Task manager.
 After **Full Load** is complete, click on the `Completed` bar to display the tables. 
 There is DML activity running in the background. Click on the `Change Processing` tab to 
 see it in action.
@@ -20,16 +32,9 @@ few minutes before you will see changes appear in the tables that we selected.
 
 ![Kafka Task 10 Image](/images/kafka-task-10.png)
 
-If you would like to see some of the messages we are delivering to Kafka, click on the following link:
+If you would like to see some of the messages we are delivering to Kafka log on to Kafdrop and click on Topics to view the messages.
 
-<div id="kafkaurl" align="center" style="font-size:30px"></div>
-<script type="text/javascript">{% include getKafkaURL.js %}</script>
-
-This link will open another window that will display the next 200 messages we deliver to the
-**testdrive** topic using the Kafka "Console Consumer". As you look at the messages, you will notice
-that they are in JSON format, just as we configured the Replicate Kafka target endpoint.
-
-![Kafka Show Image](/images/kafka-show.png)
+![Kafka Show Image](/images/prod/kafdrop2.png)
 
 When you have seen enough, you can declare Victory! for this part of the Lab. Press `Stop`
 in the top left corner of the **Replicate** console to end the task. After pressing `Stop` and clicking 

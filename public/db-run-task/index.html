@@ -47,6 +47,15 @@
         Resources
         </a>
         
+        <a class="nav-link" href="/faq">
+        
+        
+        <i data-feather="help-circle"></i> 
+        
+        
+        FAQ
+        </a>
+        
         <a class="nav-link" href="/videos">
         
         
@@ -87,7 +96,9 @@
     <div class="grid">
     <div class="unit whole" style="text-align: left">
           <articles>
-    <p>After you press <code>Run</code>, Replicate will automatically switch from <strong>Designer</strong> mode to <strong>Monitor</strong> mode.
+    <p>*Optional
+Before you</p>
+<p>After you press <code>Run</code>, Replicate will automatically switch from <strong>Designer</strong> mode to <strong>Monitor</strong> mode.
 You will be able to watch the status of the full load as it occurs, and then switch to monitoring
 change data capture as well.</p>
 <p><img src="/images/postgres-task-5.png" alt="Postgres Task 5 Image"></p>
@@ -95,29 +106,30 @@ change data capture as well.</p>
 There is DML activity running in the background. Click on the <code>Change Processing</code> tab to
 see it in action.</p>
 <p><img src="/images/postgres-task-6.png" alt="Postgres Task 6 Image"></p>
-<p>If you would like to explore the data that we have delviered to Postgres, click on the folowing link:</p>
-<p><strong>http://&lt;your_ip_address&gt;:3000</strong></p>
-<p>This link will open PGAdmin in another window in your browser. Log in with:</p>
+<p>If you would like to explore the data that we have delviered to Postgres, go to the folowing link:</p>
+<p><strong>http://YOUR_SERVER_IP_ADDRESS:3000</strong></p>
+<p>This link will open SQLPad in another window in your browser. Log in with:</p>
 <ul>
 <li>User: <code>admin@qlik.com</code></li>
 <li>Password: <code>Aws_immersion123</code></li>
 </ul>
 <p>From there, click on drop down bar in the navigation pane.
 You will see <code>mysql-src-database</code> as preconfigured and <code>postgres-tgt-database</code> in configuration menu</p>
-<p><img src="/images/pgadmin-2.png" alt="PGAdmin 2 Image"></p>
+<p><img src="/images/prod/sqlpad1.png" alt="SQLPad1 Image"></p>
 <p>Drop down to &lsquo;postgres-tgt-database` which will authenticate and bring up the database catalog</p>
 <p>You can run any query on testdrive tables and see the new data that was loaded.</p>
 <p><strong>You can run sample query</strong></p>
 <ul>
-<li>
-<p>Execute Query Such as &ldquo;select * from testdrive.&ldquo;Batting&rdquo;</p>
-</li>
-<li>
-<p>Also Configure a Quick Widget to see the values in postgres Tables</p>
-</li>
+<li>Execute Query Such as <code>select * from testdrive.&quot;Batting&quot;;</code></li>
 </ul>
+<p><img src="/images/prod/sqlpad2.png" alt="SQLPad2 Image"></p>
+<ul>
+<li>Also Configure a Quick Widget to see the values in postgres Tables</li>
+</ul>
+<p><img src="/images/prod/sqlpad3.png" alt="SQLPad3 Image"></p>
+<p><img src="/images/prod/sqlpad4.png" alt="SQLPad4 Image"></p>
 <p>Feel free to explore the structure, etc. associated with the tables we have created.</p>
-<p>Now we will enter a couple of queries. Click on `Black Canvas&rsquo; on the  screen and select</p>
+<p>Now we will enter a couple of queries.</p>
 <p>Now type</p>
 <p><code>select count(*) from testdrive.&quot;Player&quot;;</code></p>
 <p>Note the quotes around <strong>Player</strong> and that it begins with a capital &lsquo;P&rsquo;. The schemas are

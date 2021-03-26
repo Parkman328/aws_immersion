@@ -96,7 +96,17 @@ source to the target.
 ![Tranform 14 Image](/images/xform-14.png)
 
 That is it for configuration. We are now ready to save our task and run it. Press `Save` at the top
-left of the window and then press `Run`.
+left of the window.
+
+**Optional:** If you want to check that your Postgres Target has no data loaded please check 
+
+SQLPad by accesing __http://YOUR_SERVER_IP_ADDRESS:3000__ 
+
+Only Table you should see is table called test and no new data.
+
+![SQLPad Default Image](/images/prod/sqlpad-default.png)
+
+Now Press `Run` Button
 
 ![Postgres Task 4 Image](/images/postgres-task-4.png)
 

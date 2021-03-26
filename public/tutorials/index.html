@@ -47,6 +47,15 @@
         Resources
         </a>
         
+        <a class="nav-link" href="/faq">
+        
+        
+        <i data-feather="help-circle"></i> 
+        
+        
+        FAQ
+        </a>
+        
         <a class="nav-link" href="/videos">
         
         
@@ -96,7 +105,7 @@
 <li>Please note that you may need to press accept security and proceed</li>
 </ul>
 <p>Once you are logged in you will see the main screen for Qlik Replicate.</p>
-<p><img src="/images/attunityreplicate.jpg" alt=""></p>
+<p><img src="/images/prod/attunityreplicate.png" alt=""></p>
 <h3 id="navigating-the-tutorial">Navigating the Tutorial</h3>
 <p>To navigate the tutorial, it is best to follow the steps in order. You can do this by
 pressing the <code>NEXT</code>link on bottom of each page. If for some reason you want to skip
@@ -120,10 +129,14 @@ to a particular section of the lab you can navigate via the table of contents li
 <p><strong>Qlik Lab 3 - MySQL to Amazon Redshift in RealTime</strong></p>
 <ol>
 <li><a href="../db-mysql-source">Step 1 - MySQL Source Configuration</a></li>
-<li><a href="../db-postgres-target">Step 2 - Amazon Redshift Target Configuration</a></li>
-<li><a href="../db-config-task">Step 3 - Configure Your Task</a></li>
-<li><a href="../db-config-xform">Step 4 - Configure a Transformation</a></li>
-<li><a href="../db-run-task">Step 5 - Run Your Task</a></li>
+<li><a href="../db-redshift-target">Step 2 - Amazon Redshift Target Configuration</a>
+<ul>
+<li><a href="../db-s3_iam_">Step 2.1 Amazon S3 and IAM Configuration</a></li>
+</ul>
+</li>
+<li><a href="../db-redshift_config-task">Step 3 - Configure Your Task</a></li>
+<li><a href="../db-redshift_config-xform">Step 4 - Configure a Transformation</a></li>
+<li>[Step 5 - Run Your Task](../db-redshift run-task)</li>
 </ol>
 <p>Click here to <a href="../db-mysql-source">Start Lab1 - MySQL to Postgres</a></p>
 <p>Click here to <a href="../kafka-mysql-source">Start Lab2 - MySQL to Kafka</a></p>

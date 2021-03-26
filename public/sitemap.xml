@@ -8,6 +8,9 @@
     <loc>http://localhost:80/contact_us/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>http://localhost:80/faq/</loc>
+    <priority>0</priority>
+  </url><url>
     <loc>http://localhost:80/getting_started/</loc>
     <priority>0</priority>
   </url><url>

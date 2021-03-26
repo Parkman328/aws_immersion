@@ -17,6 +17,17 @@
     
     <item>
       <title></title>
+      <link>http://localhost:80/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:80/faq/</guid>
+      <description>Frequently Asked Questions  What are Sources and Target Systems Supported By Qlik Replicate on AWS? Source Endpoint for Qlik Replicate:
+ Amazon Aurora MySQL AWS Aurora Cloud for PostgreSQL Amazon RDS for MySQL Amazon RDS for MariaDB Amazon RDS for PostgreSQL Amazon RDS for SQL Server Amazon RDS for Oracle Salesforce  Target Endpoints for Qlik Replicate:
+ Amazon Aurora MySQL Amazon Aurora PostgreSQL Amazon RDS for MariaDB Amazon RDS for MySQL Amazon RDS for SQL Server Amazon RDS for Oracle Amazon RDS for PostgreSQL Amazon Redshift Amazon S3(Update not supported)  What is CDC or Change Data Capture ?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://localhost:80/getting_started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -72,11 +83,11 @@ Qlik Replicate Offline User Guide) - PDF Help Guide for Qlik Replicate</descript
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/db-mysql-source/</guid>
-      <description>The first thing we need to do is create a source endpoint. We do this by clicking the Manage Endpoint Connections button at the top of the screen.
+      <description>If you have done this in previous lab please skip
+The first thing we need to do is create a source endpoint. We do this by clicking the Manage Endpoint Connections button at the top of the screen.
 And you will see this window.
 From there, click on Add New Endpoint Connection link or the + New Endpoint Connection button at the top of the screen.
-Once you do that you will see this window:
-We will now create a MySQL source endpoint:</description>
+Once you do that you will see this window:</description>
     </item>
     
     <item>
@@ -85,7 +96,9 @@ We will now create a MySQL source endpoint:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/kafka-mysql-source/</guid>
-      <description>For this use case, we will simply reuse the MySQL source endpoint that we created in the Database-to-Database use case. If you chose to skip the Database-to-Database use case, that is fine. Simply navigate to the instructions for creating the [MySQL Source Configuration]({{ base }}{% link _replicate/tutorial/db-mysql-source.md %}) in the Database-to-Database use case and then return here to continue with this Kafka use case.
+      <description>For this use case, we will simply reuse the MySQL source endpoint that we created in the Database-to-Database use case.
+If you chose to skip the Database-to-Database use case, that is fine.
+Simply navigate to the instructions for creating the MySQL Source Configuration in the Database-to-Database use case and then return here to continue with this Kafka use case.
 Feel free to Test Connection to ensure that everything is still OK with the MySQL source connection if you wish.</description>
     </item>
     
@@ -196,8 +209,11 @@ and change its default type from STRING(50) to WSTRING(100).</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/kafka-run-task/</guid>
-      <description>When you press Run, Replicate will automatically switch from Designer mode to Monitor mode. You will be able to watch the status of the full load as it occurs, and then switch to monitoring change data capture as well.
-After Full Load is complete, click on the Completed bar to display the tables. There is DML activity running in the background. Click on the Change Processing tab to see it in action.</description>
+      <description>When you press Run, Replicate will automatically switch from Designer mode to Monitor mode. You will be able to watch the status of the full load as it occurs, and then switch to monitoring
+While Monitoring login to Kafdrop and take a look. url:YOUR_SERVER_IP_ADDRESS:9000 Initially you will not see your Kafka Topics after a few second you see it populate from Mysql via Qlik Replicate.
+Pre-Load:
+After Initial Load
+Now switchback to Qlik Replicate Task manager.</description>
     </item>
     
     <item>
@@ -206,7 +222,8 @@ After Full Load is complete, click on the Completed bar to display the tables. T
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/db-run-task/</guid>
-      <description>After you press Run, Replicate will automatically switch from Designer mode to Monitor mode. You will be able to watch the status of the full load as it occurs, and then switch to monitoring change data capture as well.
+      <description>*Optional Before you
+After you press Run, Replicate will automatically switch from Designer mode to Monitor mode. You will be able to watch the status of the full load as it occurs, and then switch to monitoring change data capture as well.
 When Full Load is complete, click on the Completed bar to display the tables. There is DML activity running in the background. Click on the Change Processing tab to see it in action.</description>
     </item>
     

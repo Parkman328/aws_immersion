@@ -6,9 +6,13 @@ permalink: /replicate/tutorial/kafka-mysql-source.php
 ---
 
 For this use case, we will simply reuse the MySQL source endpoint that we created in the 
-Database-to-Database use case. If you chose to skip the Database-to-Database use case, 
-that is fine. Simply navigate to the instructions for creating the 
-[MySQL Source Configuration]({{ base }}{% link _replicate/tutorial/db-mysql-source.md %}) 
+Database-to-Database use case. 
+
+If you chose to skip the Database-to-Database use case, 
+that is fine. 
+
+Simply navigate to the instructions for creating the 
+[MySQL Source Configuration](../db-mysql-source) 
 in the Database-to-Database use case and then return here to continue with this Kafka use case.
 
 ![MySQL Source 5 Image](/images/mysql-src-3.png)
