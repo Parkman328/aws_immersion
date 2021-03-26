@@ -1,11 +1,12 @@
 ---
-title: Step 1 - MySQL Source Configuration
+title:   Step 1 - MySQL Source Configuration
 section: Database-to-Database Replication
 tutorialtype: replicate
 ---
 
-The first thing we need to do is create a source endpoint. We do this by clicking 
-the `Manage Endpoint Connections` button at the top of the screen.
+**If you have done this in previous lab please skip**
+
+The first thing we need to do is create a source endpoint. We do this by clicking the `Manage Endpoint Connections` button at the top of the screen.
 
 ![Manage Endpoints Image](/images/manage-endpoints.png)
 
@@ -15,6 +16,7 @@ And you will see this window.
 
 From there, click on `Add New Endpoint Connection` link or the `+ New Endpoint Connection` button 
 at the top of the screen.
+
 
 Once you do that you will see this window:
 

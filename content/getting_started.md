@@ -15,45 +15,52 @@ Qlik Replicate software is installed on the same EC2 instance with full trial li
 
 Amazon Redshift Cluster and Sample AWS Bucket is created for your use in this lab.
 
-# You should ask the instructor for your server ip address or check in CloudFormation console for information.
+### Getting access to your lab environment
 
-__Before starting tutorial and labs make sure you can log into the following__ 
+__By this time all students should have recieved an email from instructor for your server ip address__
 
-### Instruction for this Lab
+# Before starting tutorial and labs make sure you can log into the following:
+
+1. Documentation for this Lab
 ______________________
-* url: __http://your_host_ip__  
+* url: __http://YOUR_SERVER_IP_ADDRESS__  
 
 ![](/images/prod/instructions.png)
 
-### Connecting to Qlik Replicate Web UI
+2. Connecting to Qlik Replicate Web UI
 ________________________
-_This lab has been tested by  Firefox Browser and you need click `Advanced...` and accept risk due to certificates_
+* url:__https://YOUR_SERVER_IP_ADDRESS:3552/attunityreplicate/__
+
+_This lab has been tested by Firefox Browser and due to certificates not being issued for ephemral servers you will see below warning
 
 ![](/images/prod/warning.png)
 
-* url:___https://your_host_ip:3552/attunityreplicate/_
+Please Click `Advanced...` and accept risk
+
 * User Name: `admin`
 * Password: `Aws_immersion123`  
+
+If you must use a different browser please let the instructor know.
 
 ![](/images/prod/logon_replicate.png)
 
 __For the lab we will not be using a certificate rather we will 'accept risk and proceed on'__
 
-### Connecting to SQLPad
+3. Connecting to SQLPad
 ___
 __SQLPad is an Open Source tool that allows user to run SQL Query.__
-* url: ___https://your_host_ip:3000_
+* url: ___https://YOUR_SERVER_IP_ADDRESS:3000_
 * User Name: `admin@qlik.com`
 * Password: `Aws_immersion123`  
 
 ![](/images/prod/sqlpad.png)
 
-### Connecting to Kafdrop
+4. Connecting to Kafdrop
 ___
 __Kafdop is an Open Source tool that allows user to view Kafka queue and Topics.__
-* url: ___https://your_host_ip:9000_
+* url: ___https://YOUR_SERVER_IP_ADDRESS:9000_
 
 ![](/images/prod/kafdrop.png)
 
 
-# [Please Click here to go to Tutorial](../tutorials) 
+### Please Click [here](../tutorials) to go to Tutorial.

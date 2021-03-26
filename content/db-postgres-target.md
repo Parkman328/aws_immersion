@@ -32,7 +32,6 @@ like  `Postgres Target`,
 
 ![Postgres Target 1 Image](/images/postgres-trg-1.png)
 
-![Postgres Target 2 Image](/images/postgres-trg-2.png)
 
 Fill in the blanks as indicated in the image above:
 * Host: `127.0.0.1`

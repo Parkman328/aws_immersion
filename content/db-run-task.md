@@ -4,6 +4,8 @@ section: Database-to-Database Replication
 tutorialtype: replicate
 permalink: /replicate/tutorial/db-run-task.php
 ---
+*Optional
+Before you  
 
 After you press `Run`, Replicate will automatically switch from **Designer** mode to **Monitor** mode. 
 You will be able to watch the status of the full load as it occurs, and then switch to monitoring 
@@ -17,11 +19,11 @@ see it in action.
 
 ![Postgres Task 6 Image](/images/postgres-task-6.png)
 
-If you would like to explore the data that we have delviered to Postgres, click on the folowing link:
+If you would like to explore the data that we have delviered to Postgres, go to the folowing link:
 
 __http://<your_ip_address>:3000__
 
-This link will open PGAdmin in another window in your browser. Log in with:
+This link will open SQLPad in another window in your browser. Log in with:
 
 * User: `admin@qlik.com`
 * Password: `Aws_immersion123`
@@ -29,7 +31,7 @@ This link will open PGAdmin in another window in your browser. Log in with:
 From there, click on drop down bar in the navigation pane.
 You will see `mysql-src-database` as preconfigured and `postgres-tgt-database` in configuration menu
 
-![PGAdmin 2 Image](/images/pgadmin-2.png)
+![SQLPad1 Image](/images/prod/sqlpad1.png)
 
 Drop down to 'postgres-tgt-database` which will authenticate and bring up the database catalog
 
@@ -39,7 +41,13 @@ You can run any query on testdrive tables and see the new data that was loaded.
 
 - Execute Query Such as "select * from testdrive."Batting"
 
+![SQLPad2 Image](/images/prod/sqlpad2.png)
+
 - Also Configure a Quick Widget to see the values in postgres Tables
+
+![SQLPad3 Image](/images/prod/sqlpad3.png)
+
+![SQLPad4 Image](/images/prod/sqlpad4.png)
 
 Feel free to explore the structure, etc. associated with the tables we have created. 
 

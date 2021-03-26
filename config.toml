@@ -23,13 +23,18 @@ theme='qlik-pe'
     pre = "book"
     url = "/resources"
     weight = 4
+  [[menu.main]]
+    name = "FAQ"
+    pre = "help-circle"
+    url = "/faq"
+    weight = 5
    [[menu.main]]
     name = "Videos"
     pre = "youtube"
     url = "/videos"
-    weight = 5
+    weight = 6
   [[menu.main]]
     name = "Contact Qlik"
     pre = "send"
     url = "/contact_us"
-    weight = 6
+    weight = 7
