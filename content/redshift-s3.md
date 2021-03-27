@@ -1,5 +1,5 @@
 ---
-title: Step 2 - Amazon Redshift IAM and S3 Configuration 
+title: Step 2.1 - Amazon Redshift IAM and S3 Configuration 
 section: Database-to-Database Replication
 tutorialtype: replicate
 permalink: /replicate/tutorial/Amazon-Redshift-target.php
@@ -17,70 +17,27 @@ Go to AWS S3 and you should see a bucket name that and in "-qlikreplicate"
 
 Click on the bucket and "Properties"
 
-Please get the name of the bucket and what region the bucket belongs in and 
+Please get the name of the bucket and what region the bucket belongs in
 
-Go back to Replicate and Fill in 
+Go back to Qlik Replicate and Fill in following from End Point Configurations
 
 * Bucket Name: `YOURBUCKETNAME`
 * Region: `YOUR-REGION`
 
+Now you will need to add an user with full s3 access. 
+Go into IAM section of AWS add an User
+Add a Role for that with S3Full Access.
 
+* Access Key: `YOUR ACCESS KEY`
+* Your Secret Key: `YOUR SECRET KEY`
 
-* Password: `Aws_immersion123`
-* Database: `qlikdb`
+Press `Test` to test connection
+.
 
-
-![Manage Endpoints Image](/images/manage-endpoints.png)
-
-and then press the `+ New Endpoint Connection` button.
-
-
-![Manage Endpoints Image](/images/add-new-endpoint-2.png)
-
-and you will see a window that resembles this:
-
-![New Endpoint Image](/images/new-endpoint.png)
-
-We will now create a Amazon Redshift Target endpoint:
-* Replace the text **New Endpoint Connection 1** with something more descriptive
-like  `Redshift Target`,
-* make sure the `Target` radio button is selected,
-* and then select `Amazon Redshift` from the dropdown selection box.
-
-At this Point we need grab  the end point for our Redshift Instance.
-
-Go to your EC2 Console and Find Amazon Redshift under "Services"
-
-On your Dashboard you should see your Cluster already running
-
-Click on your Cluster
-
-Caputer the Endpoint name of your custer
-
-__it should look something like this:__
-
-Fill in the blanks as indicated in the image above:
-* Host: `localhost`
-* Port: `5432`
-* User: `qlik123`
-* Password: `Aws_immersion123`
-* Database: `qlikdb`
-
-![Redshift Target 1 Image](/images/Redshift-trg-1.png)
-
-![Redshift Target 2 Image](/images/Redshift-trg-2.png)
-
-and then click on `Test Connection`. Your screen should look like the following
-
-![Redshift Target 3 Image](/images/Redshift-trg-3.png)
-
-Due to Design of Redshift Cluster you need you are not finished. 
-
-You must configure an IAM role with S3 Bucket precreated for you.
 
 
 For more details about using RedshiftQL as a target, please review the section 
 "Using a RedshiftQL-Based as a Target" in Chapter 9 "Adding and Managing Target Endpoints" of the
 [Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
 
- # [NEXT](../db-config-task)
+ # [NEXT](../redshift-config-task)

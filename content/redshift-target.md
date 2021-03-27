@@ -30,40 +30,41 @@ like  `Redshift Target`,
 * make sure the `Target` radio button is selected,
 * and then select `Amazon Redshift` from the dropdown selection box.
 
-At this Point we need grab  the end point for our Redshift Instance.
+![New Endpoint Image](/images/redshift-trg-1.png)
+
+At this Point we need grab  the end point for our Amazon Redshift Instance.
 
 Go to your EC2 Console and Find Amazon Redshift under "Services"
 
-On your Dashboard you should see your Cluster already running
+![New Endpoint Image](/images/redshift-trg-3.png)
 
-Click on your Cluster
+On your Dashboard you should see your Cluster already running.
 
-Caputer the Endpoint name of your custer
+Navigate to the Cluster and you should see the properties of your cluster looking something like.
 
-__it should look something like this:__
+Click on the button to copy the endpoint.
+
+![New Endpoint Image](/images/redshift-trg-4.png)
+
+Once the endpoint is copied you should see that it has port number and database appended.
+Manually remove the valuess and use endpoint as a reference to fill in the variables.
+
+
+![New Endpoint Image](/images/redshift-trg-2.png)
 
 Fill in the blanks as indicated in the image above:
-* Host: `localhost`
+* Host: `YOUR REDSHIFT ENDPOINT`
 * Port: `5432`
 * User: `qlik123`
 * Password: `Aws_immersion123`
 * Database: `qlikdb`
 
-![Redshift Target 1 Image](/images/Redshift-trg-1.png)
+Due to Design of Redshift Cluster you need  to use S3 as intermediate staging area
 
-![Redshift Target 2 Image](/images/Redshift-trg-2.png)
-
-and then click on `Test Connection`. Your screen should look like the following
-
-![Redshift Target 3 Image](/images/Redshift-trg-3.png)
-
-Due to Design of Redshift Cluster you need you are not finished. 
-
-You must configure an IAM role with S3 Bucket precreated for you.
-
+Next steps will walk you through that steps.
 
 For more details about using RedshiftQL as a target, please review the section 
 "Using a RedshiftQL-Based as a Target" in Chapter 9 "Adding and Managing Target Endpoints" of the
 [Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
 
- # [NEXT](../db-config-task)
+ # [NEXT](../redshift-s3)

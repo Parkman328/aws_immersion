@@ -5,7 +5,7 @@ tutorialtype: replicate
 permalink: /replicate/tutorial/db-config-task.php
 ---
 
-Now that we have configured our MySQL source and Postgres target endpoints, we need to tie 
+Now that we have configured our MySQL source and Redshift target endpoints, we need to tie 
 them together in what we call a Replicate **task**. In short, a task defines the following:
 
 * A source endpoint
@@ -21,13 +21,15 @@ Once you do, a window like this will pop up:
 
 ![Start Task 2a Image](/images/start-task-2a.png)
 
-Give this task a meaningful name like `MySQL to Postgres`. For this task we will take the defaults:
+Give this task a meaningful name like `MySQL to Redshift`. For this task we will take the defaults:
 
-* Name: `MySQL to Postgres`
+* Name: `MySQL to Redshift`
 * `Unidirectional`
 * Full Load: `enabled` _(Blue highlight is enabled; click to enable / disable.)_
 * Apply Changes: `enabled` _(Blue highlight is enabled; click to enable / disable.)_
 * Store Changes: `disabled` _(Blue highlight is enabled; click to enable / disable.)_
+
+![Start Task 3 Image](/images/redshift-task-1.png)
 
 Once you have everything set, press `OK` to create the task. When you have completed this step
 you will see a window that looks like this:
@@ -36,7 +38,7 @@ you will see a window that looks like this:
 
 Qlik Replicate is all about **ease of use**. The interface is point-and-click, drag-and-drop. 
 To configure our
-task, we need to select a source endpoint (MySQL) and a target endpoint (Postgres). You can either drag
+task, we need to select a source endpoint (MySQL) and a target endpoint (Redshift). You can either drag
 the `MySQL Source` endpoint from the box on the left of the screen and drop it into the circle that 
 says `Drop source endpoint here`, or you can click on the arrow that appears just to the right of the
 endpoint when you highlight it.
@@ -45,14 +47,14 @@ endpoint when you highlight it.
 
 ![Start Task 5 Image](/images/start-task-5.png)
 
-Repeat the same process for the Postgres Target endpoint. Your screen should now look like this:
+Repeat the same process for the Redshift Target endpoint. Your screen should now look like this:
 
-![Postgres Task 1 Image](/images/postgres-task-1.png)
+![Redshift Task 1 Image](/images/redshift-task-5.png)
 
-Our next step is to select the tables we want to replicate from MySQL into Postgres. Click on 
+Our next step is to select the tables we want to replicate from MySQL into Redshift. Click on 
 the `Table Selection...` button in the top center of your browser.
 
-![Postgres Task 2 Image](/images/postgres-task-2.png)
+![Redshift Task 2 Image](/images/redshift-task-2.png)
 
 and from there select the `testdrive` schema.
 
@@ -72,5 +74,5 @@ selectively choosing tables from the **Results** list.
 
 ![Start Task 8 Image](/images/start-task-8.png)
 
-# [NEXT](../db-run-task)
+# [NEXT](../redshift-config-xform)
  

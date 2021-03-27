@@ -42,10 +42,10 @@ __Qlik Lab 3 - MySQL to Amazon Redshift in RealTime__
 
    1. [Step 1 - MySQL Source Configuration](../redshift-mysql-source)
    2. [Step 2 - Amazon Redshift Target Configuration](../redshift-target)
-        - [Step 2.1 Amazon S3 and IAM Configuration](../db-s3_iam_)
-   3. [Step 3 - Configure Your Task](../redshift_config-task)
-   4. [Step 4 - Configure a Transformation](../redshift_config-xform)
-   5. [Step 5 - Run Your Task](../redshift_run-task)
+        - [Step 2.1 Amazon S3 and IAM Configuration](../redshift-s3)
+   3. [Step 3 - Configure Your Task](../redshift-config-task)
+   4. [Step 4 - Configure a Transformation](../redshift-config-xform)
+   5. [Step 5 - Run Your Task](../redshift-run-task)
 
 Click here to [Start Lab1 - MySQL to Postgres](../db-mysql-source)  
 

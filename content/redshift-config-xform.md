@@ -98,6 +98,6 @@ source to the target.
 That is it for configuration. We are now ready to save our task and run it. Press `Save` at the top
 left of the window and then press `Run`.
 
-![Postgres Task 4 Image](/images/postgres-task-4.png)
+![Redshift Task 4 Image](/images/redshift-task-4.png)
 
-# [NEXT](../db-run-task)
+# [NEXT](../redshift-run-task)
