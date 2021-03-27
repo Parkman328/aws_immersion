@@ -93,6 +93,6 @@ You just:
 
 All that in 5 easy steps!
 
-You can now move on to the next part of the AWS Immersion Day  Tutorials.
+You can now move on to the next part of the AWS Immersion Day [Tutorials](../tutorials).
 
 

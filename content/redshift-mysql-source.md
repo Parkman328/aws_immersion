@@ -1,59 +1,32 @@
 ---
 title: Step 1 - MySQL Source Configuration
-section: Database-to-Database Replication
+section: Streaming Data to Kafka
 tutorialtype: replicate
+permalink: /replicate/tutorial/redshift-mysql-source.php
 ---
 
-The first thing we need to do is create a source endpoint. We do this by clicking 
-the `Manage Endpoint Connections` button at the top of the screen.
+For this Tutorial, we will simply reuse the MySQL source endpoint that we created in the 
+Database-to-Database use case. 
 
-![Manage Endpoints Image](/images/manage-endpoints.png)
+If you chose to skip the Database-to-Database use case, 
+that is fine. 
 
-And you will see this window.
+Simply navigate to the instructions for creating the 
+[MySQL Source Configuration](../db-mysql-source) in the Database-to-Database use case and then return here to continue with this Kafka use case.
 
-![Add New Endpoint Image](/images/add-new-endpoint.png)
+![MySQL Source 5 Image](/images/mysql-src-3.png)
 
-From there, click on `Add New Endpoint Connection` link or the `+ New Endpoint Connection` button 
-at the top of the screen.
+Feel free to `Test Connection` to ensure that everything is still OK with the MySQL source connection 
+if you wish. 
 
-Once you do that you will see this window:
+To do this, click on `Manage Endpoint Connections...` and then select the MySQL source
+endpoint. From there you can `Test Connection`.
 
-![New Endpoint Image](/images/new-endpoint.png)
+> For more details about using MySQL as a source, please review the section
 
-We will now create a MySQL source endpoint:
+>"Using a MyQL-Based Database as a Source" in Chapter 8 "Adding and Managing Source Endpoints" 
 
-* Replace the text **New Endpoint Connection 1** with something more descriptive 
-like  `MySQL Source`, 
-* make sure the `Source` radio button is selected, 
-* and then select `MySQL` from the dropdown selection box.
-
-![MySQL Source 1 Image](/images/mysql-src-1.png)
-
-You will notice as we proceed that the content of the configuration window is context-sensitive.
-
-![MySQL Source 2 Image](/images/mysql-src-2.png)
-
-![MySQL Source 3 Image](/images/mysql-src-3.png)
-
-Fill in the blanks as indicated in the images above:
-* Server: ``
-* Port: `3306`
-* User: `root`
-* Password: `Aws_immersion123`
-* Security/SSL Mode: `None`
-
-and then click on `Test Connection`. Your screen should look like the following, indicating that
-your connection succeeded.
-
-![MySQL Source 4 Image](/images/mysql-src-4.png)
+>of the [Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
 
 
-Assuming so, click `Save` and the configuration of your MySQL source endpoint is complete.
-Click `Close` to close the window.
-
-
-For more details about using MySQL as a source, please review the section
-"Using a MyQL-Based Database as a Source" in Chapter 8 "Adding and Managing Source Endpoints" of the
-[Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
-
-# [NEXT](../db-postgres-target) 
+# [NEXT](../redshift-target) 

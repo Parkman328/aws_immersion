@@ -1,17 +1,34 @@
 ---
-title: Step 2 - Amazon Redshift Target Configuration 
+title: Step 2 - Amazon Redshift IAM and S3 Configuration 
 section: Database-to-Database Replication
 tutorialtype: replicate
 permalink: /replicate/tutorial/Amazon-Redshift-target.php
 ---
 
-Next we need to configure our Redshift target endpoint. The process is much the same as you saw 
-with the MySQL source but for Redshift we need to have S3 Bucket, and once again you will note that the configuration process is
-context-sensitive as we move along.
+Next we need to configure our IAM Policy and Download Access and Secret Keys for Qlik Replicate to stage the data to Amazon S3 prior to writing it Redshift
 
-As before, the first step in the configuration process is to tell Replicate that we want to 
-create a new endpoint. If you are back on the main window, you will need to click on 
-`Manage Endpoint Connections` button.
+AWS IAM Policies, Users, and Roles are way AWS Secures resources and gives the right amount of access.
+
+For this process we will give our current user access to all S3 buckets but your Cloud admin can secure it so user/role only has access to a single bucket we need.
+
+First grab the bucket name
+
+Go to AWS S3 and you should see a bucket name that and in "-qlikreplicate"
+
+Click on the bucket and "Properties"
+
+Please get the name of the bucket and what region the bucket belongs in and 
+
+Go back to Replicate and Fill in 
+
+* Bucket Name: `YOURBUCKETNAME`
+* Region: `YOUR-REGION`
+
+
+
+* Password: `Aws_immersion123`
+* Database: `qlikdb`
+
 
 ![Manage Endpoints Image](/images/manage-endpoints.png)
 

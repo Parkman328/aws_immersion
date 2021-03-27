@@ -66,7 +66,7 @@ tables (`%`) if you do not limit the search.
 
 ![Start Task 7 Image](/images/start-task-7.png)
 
-and then press the `>>` button to move all of the tables from the **Results** list into the 
+Press the `>>` button to move all of the tables from the **Results** list into the 
 **Selected Tables** list. Note that we also had the option of simply wildcarding all tables, or
 selectively choosing tables from the **Results** list.
 

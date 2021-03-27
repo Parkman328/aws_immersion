@@ -31,12 +31,13 @@ ______________________
 ________________________
 * url:__https://YOUR_SERVER_IP_ADDRESS:3552/attunityreplicate/__
 
-_This lab has been tested by Firefox Browser and due to certificates not being issued for ephemral servers you will see below warning
+_This lab has been tested by Firefox Browser and due to certificates not being issued for ephemral servers you will see below warning_
+
+>__Please proceed ahead by pre Clicking `Advanced...` and Pressing `accept risk and proceed on`__
 
 ![](/images/prod/warning.png)
 
-Please Click `Advanced...` and accept risk
-
+Please use the follonwing user name:
 * User Name: `admin`
 * Password: `Aws_immersion123`  
 
@@ -44,12 +45,11 @@ If you must use a different browser please let the instructor know.
 
 ![](/images/prod/logon_replicate.png)
 
-__For the lab we will not be using a certificate rather we will 'accept risk and proceed on'__
 
 3. Connecting to SQLPad
 ___
 __SQLPad is an Open Source tool that allows user to run SQL Query.__
-* url: ___https://YOUR_SERVER_IP_ADDRESS:3000_
+* url: ___https://YOUR_SERVER_IP_ADDRESS:3000__
 * User Name: `admin@qlik.com`
 * Password: `Aws_immersion123`  
 
@@ -58,7 +58,7 @@ __SQLPad is an Open Source tool that allows user to run SQL Query.__
 4. Connecting to Kafdrop
 ___
 __Kafdop is an Open Source tool that allows user to view Kafka queue and Topics.__
-* url: ___https://YOUR_SERVER_IP_ADDRESS:9000_
+* url: ___https://YOUR_SERVER_IP_ADDRESS:9000__
 
 ![](/images/prod/kafdrop.png)
 
