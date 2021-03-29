@@ -40,14 +40,17 @@ Go to your EC2 Console and Find Amazon Redshift under "Services"
 
 On your Dashboard you should see your Cluster already running.
 
+![New Endpoint Image](/images/redshift-task-2.png)
+
 Navigate to the Cluster and you should see the properties of your cluster looking something like.
 
 Click on the button to copy the endpoint.
 
 ![New Endpoint Image](/images/redshift-trg-4.png)
 
-Once the endpoint is copied you should see that it has port number and database appended.
-Manually remove the valuess and use endpoint as a reference to fill in the variables.
+__Once the endpoint is copied you should see that it has port number and database appended.__
+
+__Manually remove the valuess and use endpoint as a reference to fill in the variables.__
 
 
 ![New Endpoint Image](/images/redshift-trg-2.png)
