@@ -96,7 +96,7 @@ Once you do that you will see this window:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/kafka-mysql-source/</guid>
-      <description>For this use case, we will simply reuse the MySQL source endpoint that we created in the Database-to-Database use case.
+      <description>For this Tutorial, we will simply reuse the MySQL source endpoint that we created in the Database-to-Database use case.
 If you chose to skip the Database-to-Database use case, that is fine.
 Simply navigate to the instructions for creating the MySQL Source Configuration in the Database-to-Database use case and then return here to continue with this Kafka use case.
 Feel free to Test Connection to ensure that everything is still OK with the MySQL source connection if you wish.</description>
@@ -108,11 +108,20 @@ Feel free to Test Connection to ensure that everything is still OK with the MySQ
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/redshift-mysql-source/</guid>
-      <description>The first thing we need to do is create a source endpoint. We do this by clicking the Manage Endpoint Connections button at the top of the screen.
-And you will see this window.
-From there, click on Add New Endpoint Connection link or the + New Endpoint Connection button at the top of the screen.
-Once you do that you will see this window:
-We will now create a MySQL source endpoint:</description>
+      <description>For this Tutorial, we will simply reuse the MySQL source endpoint that we created in the Database-to-Database use case.
+If you chose to skip the Database-to-Database use case, that is fine.
+Simply navigate to the instructions for creating the MySQL Source Configuration in the Database-to-Database use case and then return here to continue with this Kafka use case.
+Feel free to Test Connection to ensure that everything is still OK with the MySQL source connection if you wish.</description>
+    </item>
+    
+    <item>
+      <title>Step 2 - Amazon Redshift Target Configuration</title>
+      <link>http://localhost:80/redshift-target/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:80/redshift-target/</guid>
+      <description>Next we need to configure our Redshift target endpoint. The process is much the same as you saw with the MySQL source but for Redshift we need to have S3 Bucket, and once again you will note that the configuration process is context-sensitive as we move along.
+As before, the first step in the configuration process is to tell Replicate that we want to create a new endpoint. If you are back on the main window, you will need to click on Manage Endpoint Connections button.</description>
     </item>
     
     <item>
@@ -136,13 +145,14 @@ As before, the first step in the configuration process is to tell Replicate that
     </item>
     
     <item>
-      <title>Step 2 - Postgres Target Configuration</title>
-      <link>http://localhost:80/redshift-target/</link>
+      <title>Step 2.1 - Amazon Redshift IAM and S3 Configuration</title>
+      <link>http://localhost:80/redshift-s3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:80/redshift-target/</guid>
-      <description>Next we need to configure our Postgres target endpoint. The process is much the same as you saw with the MySQL source, and once again you will note that the configuration process is context-sensitive as we move along.
-As before, the first step in the configuration process is to tell Replicate that we want to create a new endpoint. If you are back on the main window, you will need to click on Manage Endpoint Connections button.</description>
+      <guid>http://localhost:80/redshift-s3/</guid>
+      <description>Next we need to configure our IAM Policy and Download Access and Secret Keys for Qlik Replicate to stage the data to Amazon S3 prior to writing it Redshift
+AWS IAM Policies, Users, and Roles are way AWS Secures resources and gives the right amount of access.
+For this process we will give our current user access to all S3 buckets but your Cloud admin can secure it so user/role only has access to a single bucket we need.</description>
     </item>
     
     <item>
@@ -171,7 +181,7 @@ As before, the first step in the configuration process is to tell Replicate that
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/redshift-config-task/</guid>
-      <description>Now that we have configured our MySQL source and Postgres target endpoints, we need to tie them together in what we call a Replicate task. In short, a task defines the following:
+      <description>Now that we have configured our MySQL source and Redshift target endpoints, we need to tie them together in what we call a Replicate task. In short, a task defines the following:
  A source endpoint A target endpoint The list of tables that we want to capture Any transformations we want to make on the data  To get started, we need to create a task. Click on the + New Task button at the top of the screen.</description>
     </item>
     
@@ -210,10 +220,8 @@ and change its default type from STRING(50) to WSTRING(100).</description>
       
       <guid>http://localhost:80/kafka-run-task/</guid>
       <description>When you press Run, Replicate will automatically switch from Designer mode to Monitor mode. You will be able to watch the status of the full load as it occurs, and then switch to monitoring
-While Monitoring login to Kafdrop and take a look. url:YOUR_SERVER_IP_ADDRESS:9000 Initially you will not see your Kafka Topics after a few second you see it populate from Mysql via Qlik Replicate.
-Pre-Load:
-After Initial Load
-Now switchback to Qlik Replicate Task manager.</description>
+While Monitoring login to Kafdrop and take a look. url:YOUR_SERVER_IP_ADDRESS:9000
+Initially you will not see your Kafka Topics configured for each table but after a few second you see it populate from Mysql via Qlik Replicate.</description>
     </item>
     
     <item>

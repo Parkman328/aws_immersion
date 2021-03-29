@@ -38,8 +38,6 @@ like  `Kafka JSON Target`,
 
 ![Kafka Target 4 Image](/images/kafka-trg-4.png)
 
-![Kafka Target 5 Image](/images/kafka-trg-5.png)
-
 Fill in the blanks as indicated in the images above:
 * Broker servers: `kafka:29092`
 * Security/Use SSL: `NOT checked`

@@ -99,8 +99,8 @@
     <p>When you press <code>Run</code>, Replicate will automatically switch from <strong>Designer</strong> mode to <strong>Monitor</strong> mode.
 You will be able to watch the status of the full load as it occurs, and then switch to monitoring</p>
 <p><img src="/images/kafka-task-9.png" alt="Kafka Task 9 Image"></p>
-<p>While Monitoring login to Kafdrop and take a look. url:YOUR_SERVER_IP_ADDRESS:9000
-Initially you will not see your Kafka Topics after a few second you see it populate from Mysql via Qlik Replicate.</p>
+<p>While Monitoring login to Kafdrop and take a look. <strong>url:YOUR_SERVER_IP_ADDRESS:9000</strong></p>
+<p>Initially you will not see your Kafka Topics configured for each table but after a few second you see it populate from Mysql via Qlik Replicate.</p>
 <p>Pre-Load:</p>
 <p><img src="/images/prod/kafdrop.png" alt="Kafdrop 1"></p>
 <p>After Initial Load</p>
@@ -117,7 +117,8 @@ few minutes before you will see changes appear in the tables that we selected.</
 <p>If you would like to see some of the messages we are delivering to Kafka log on to Kafdrop and click on Topics to view the messages.</p>
 <p><img src="/images/prod/kafdrop2.png" alt="Kafka Show Image"></p>
 <p>When you have seen enough, you can declare Victory! for this part of the Lab. Press <code>Stop</code>
-in the top left corner of the <strong>Replicate</strong> console to end the task. After pressing <code>Stop</code> and clicking
+in the top left corner of the <strong>Replicate</strong> console to end the task.</p>
+<p>After pressing <code>Stop</code> and clicking
 <code>Yes</code> in the confirmation dialog, close the <strong>MySQL to Kafka</strong> tab or click
 on the <code>TASKS</code> tab to return to the main window.</p>
 <p><img src="/images/kafka-task-11.png" alt="Kafka Task 11 Image"></p>
@@ -125,17 +126,17 @@ on the <code>TASKS</code> tab to return to the main window.</p>
 <p>You just:</p>
 <ul>
 <li>Defined access and authentication into a MySQL source and a Kafka target</li>
-<li>Defined the source tables from which you want to create Kafka messages</li>
+<li>Defined the source tables from which you want to create Kafka Topics/Messages</li>
 <li>Configured the MySQL to Kafka task</li>
 <li>Captured  initial data from the source without while maintaining business continuity
 (DML activity was going on in the background to simulate users working on the source database)</li>
 <li>Automatically created kafka messages from the initial table state</li>
 <li>Captured all new transactions which were happening while the initial load was running</li>
-<li>Turned ll net new data into Kafka messages</li>
+<li>Turned net new data into Kafka messages</li>
 <li>Observed change data being recorded as it is sent to and applied at the  target</li>
 </ul>
 <p>All that in 4 easy steps!</p>
-<p>You can now move on to the next part of the AWS Immersive Day Tutorials.</p>
+<p>You can now move on to the next part of the AWS Immersive Day <a href="../tutorials">Tutorials</a>.</p>
 
     
     </articles>

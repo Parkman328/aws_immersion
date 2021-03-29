@@ -33,11 +33,13 @@
   </url><url>
     <loc>http://localhost:80/redshift-mysql-source/</loc>
   </url><url>
+    <loc>http://localhost:80/redshift-target/</loc>
+  </url><url>
     <loc>http://localhost:80/kafka-target/</loc>
   </url><url>
     <loc>http://localhost:80/db-postgres-target/</loc>
   </url><url>
-    <loc>http://localhost:80/redshift-target/</loc>
+    <loc>http://localhost:80/redshift-s3/</loc>
   </url><url>
     <loc>http://localhost:80/db-config-task/</loc>
   </url><url>
