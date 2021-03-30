@@ -23,10 +23,14 @@ If you would like to explore the data that we have delviered to Redshift please 
 
 Connect to your Cluster by Creating your Connection
 
-Press the Edit on Top Right at SQL Pad
+Press the Edit on Top Right at SQLPad
 
 ![SQL Pad Edit](/images/sqlpad5.png)
+
+Press the Edit on Top Connections
+
 ![SQL Pad Edit](/images/sqlpad6.png)
+
 * Connection name: `Redshift`
 * Driver: `Redshift`
 * Host: **REDSHIFT_CLUSTER_NAME**
@@ -34,6 +38,7 @@ Press the Edit on Top Right at SQL Pad
 * Database: `testdrive`
 * Database Username: `qlik123`
 * Database Password: `Aws_immersion123`
+
 ![SQL Pad Edit](/images/sqlpad7.png)
 
 Now type 

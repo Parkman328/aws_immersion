@@ -5,6 +5,7 @@
 First things first, we need to open Qlik Replicate. 
 
    1.Open Replicate  in a new tab in your broswer. 
+   
    2.For url, username and password please refer to [GettingStarted Page](../getting_started)
    -  Please note that you may need to press accept security and proceed 
 

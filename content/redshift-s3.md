@@ -48,38 +48,56 @@ At this point you will see IAM dashboard; click on `Users`
 
 Click on and press `Add User`
 
-Add User qlik-replicate and select programmatic access
+![S3 Bucket Properties](/images/redshift-s3-11.png)
 
-Press button Next: Permissions
-Go to Permissions Tab Click on Add Permissions
-Click on Create User
+Input your Amazon S3 User Name:
+
+* __User Name: qlik-replicate__
+* __Select Programmatic access only__
+
+![S3 Bucket Properties](/images/redshift-s3-12.png)
+
+Press Button `Next Permissions`
+
+![S3 Bucket Properties](/images/redshift-s3-13.png)
+
+Press Button `Next Permissions`
+
+![S3 Bucket Properties](/images/redshift-s3-14.png)
+
+Optional Add Tags a nd Press Button `Next Review`
+
+![S3 Bucket Properties](/images/redshift-s3-16.png)
+
+Review you User name and Press Button `Create User`
+
+![S3 Bucket Properties](/images/redshift-s3-15.png)
+
+**At this point your new user with Full Amazon S3 privilages are created**
+
 Copy Access Key and Secret Key to Qlik Replicate Connection windown 
 (Click on Show on access key to view the key)
 
-![S3 Bucket Properties](/images/redshift-s3-7.png)
-
-Add S3 Permissions by clicking "Attach esisting policies directly" 
-
-![S3 Bucket Properties](/images/redshift-s3-8.png)
-
-Go back to `Users` and click on Security Credentials and Create Access Keys
-
-![S3 Bucket Properties](/images/redshift-s3-9.png)
+![S3 Bucket Properties](/images/redshift-s3-17.png)
 
 Donwload your keys or copy the keys into Qlik Replicate Connection Window.(Please Click on Show to see your secret key)
-
-![S3 Bucket Properties](/images/redshift-s3-10.png)
 
 Please copy the keys to your Qlik Replicate Connection Window
 
 * Access Key: `YOUR ACCESS KEY`
 * Your Secret Key: `YOUR SECRET KEY`
 
-
 ![S3 Bucket Properties](/images/redshift-s3-4.png)
 
 Press `Test` to test connection
-.
+
+![S3 Bucket Properties](/images/redshift-s3-19.png)
+
+>Note if you run into issues with Qlik Replicate complaining about S3 access please verify the qlik-replicate user has access to S3 buckets.
+
+![S3 Bucket Properties](/images/redshift-s3-18.png)
+
+
 
 
 
