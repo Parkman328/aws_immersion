@@ -5,7 +5,7 @@ tutorialtype: replicate
 permalink: /replicate/tutorial/Amazon-Redshift-target.php
 ---
 
-Next we need to configure our IAM Policy and Download Access and Secret Keys for Qlik Replicate to stage the data to Amazon S3 prior to writing it Redshift
+Next we need to configure our IAM Policy and Download Access and Secret Keys for Qlik Replicate to stage the data to Amazon S3 prior to writing it Redshift.
 
 AWS IAM Policies, Users, and Roles are way AWS Secures resources and gives the right amount of access.
 
@@ -13,11 +13,19 @@ For this process we will give our current user access to all S3 buckets but your
 
 First grab the bucket name
 
+![S3 Bucket](/images/redshift-s3-1.png)
+
 Go to AWS S3 and you should see a bucket name that and in "-qlikreplicate"
+
+![S3 Bucket Name](/images/redshift-s3-2.png)
 
 Click on the bucket and "Properties"
 
-Please get the name of the bucket and what region the bucket belongs in
+![S3 Bucket Properties](/images/redshift-s3-3.png)
+
+Please get the name of the bucket and what AWS Region the bucket belongs in
+
+![S3 Bucket Properties](/images/redshift-s3-4.png)
 
 Go back to Qlik Replicate and Fill in following from End Point Configurations
 
@@ -28,8 +36,39 @@ Now you will need to add an user with full s3 access.
 Go into IAM section of AWS add an User
 Add a Role for that with S3Full Access.
 
+__for this tutorial we will just logged in user with full s3 acces__
+
+Go to IAM section on your AWS Console by clicking on services(top left) -> IAM.  If it does not show up you can search for 'IAM' as well.
+
+![S3 Bucket Properties](/images/redshift-s3-5.png)
+
+At this point you will see IAM dashboard; click on `Users` and __Click on your user.__
+
+![S3 Bucket Properties](/images/redshift-s3-6.png)
+
+Go to Permissions Tab Click on Add Permissions
+
+![S3 Bucket Properties](/images/redshift-s3-7.png)
+
+Add S3 Permissions by clicking "Attach esisting policies directly" 
+
+![S3 Bucket Properties](/images/redshift-s3-8.png)
+
+Go back to `Users` and click on Security Credentials and Create Access Keys
+
+![S3 Bucket Properties](/images/redshift-s3-9.png)
+
+Donwload your keys or copy the keys into Qlik Replicate Connection Window.(Please Click on Show to see your secret key)
+
+![S3 Bucket Properties](/images/redshift-s3-10.png)
+
+Please copy the keys to your Qlik Replicate Connection Window
+
 * Access Key: `YOUR ACCESS KEY`
 * Your Secret Key: `YOUR SECRET KEY`
+
+
+![S3 Bucket Properties](/images/redshift-s3-4.png)
 
 Press `Test` to test connection
 .
