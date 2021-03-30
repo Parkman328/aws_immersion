@@ -69,16 +69,6 @@ Qlik Replicate Offline User Guide) - PDF Help Guide for Qlik Replicate</descript
     </item>
     
     <item>
-      <title>Display Kafka Messages</title>
-      <link>http://localhost:80/kafka-show/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:80/kafka-show/</guid>
-      <description>Here are the 200 most recent messages that were delivered to Kafka displayed using the Kafka &amp;ldquo;Console Consumer&amp;rdquo;. Messages are deserialized as raw text, but as you can see the data is in JSON format as we configured in the Replicate task.
- /* Add redirection so we can get stderr. */ $cmd=&amp;quot;/opt/kafka*/bin/kafka-console-consumer.sh --bootstrap-server kafka:29092 --topic testdrive --offset ${offset} --max-messages ${msgcount} --partition 0 2&amp;gt;&amp;amp;1&amp;quot;; $handle = popen(&amp;quot;$kafkaopts;$cmd&amp;quot;, &#39;r&#39;); while (!feof($handle)) { $output = fread($handle, 2096); echo(nl2br($output)); ob_flush(); flush(); } pclose($handle); ?</description>
-    </item>
-    
-    <item>
       <title>Step 1 - MySQL Source Configuration</title>
       <link>http://localhost:80/db-mysql-source/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

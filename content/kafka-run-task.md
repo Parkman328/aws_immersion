@@ -60,6 +60,4 @@ You just:
 
 All that in 4 easy steps!
 
-You can now move on to the next part of the AWS Immersive Day [Tutorials](../tutorials).
-
-
+#### You can now move on to the next part of the AWS Immersive Day [Tutorials](../tutorials).

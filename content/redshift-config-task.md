@@ -74,5 +74,4 @@ selectively choosing tables from the **Results** list.
 
 ![Start Task 8 Image](/images/start-task-8.png)
 
-# [NEXT](../redshift-config-xform)
- 
+#### [NEXT](../redshift-config-xform)

@@ -59,10 +59,8 @@ your connection succeeded.
 Assuming so, click `Save` and the configuration of your Kafka target endpoint is complete.
 Click `Close` to close the window.
 
-For more details about using Kafka as a target, please review the section 
-"Using Kafka as a Target" in Chapter 9 "Adding and Managing Target Endpoints" of the
-[Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
+> For more details about using Kafka as a target, please review the section   
+> "Using Kafka as a Target" in Chapter 9 "Adding and Managing Target Endpoints" of the  
+> [Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
 
-# [NEXT](../kafka-config-task)
-   
-
+#### [NEXT](../kafka-config-task)

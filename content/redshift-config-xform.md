@@ -100,4 +100,4 @@ left of the window and then press `Run`.
 
 ![Redshift Task 4 Image](/images/redshift-task-6.png)
 
-# [NEXT](../redshift-run-task)
+#### [NEXT](../redshift-run-task)

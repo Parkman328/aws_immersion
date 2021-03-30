@@ -97,12 +97,8 @@ Press `Test` to test connection
 
 ![S3 Bucket Properties](/images/redshift-s3-18.png)
 
+>Qlik Replicate can write directly to S3 For more details about using Amazon S3 as a target, please review the section   
+>"Using a Amazon S3 as a Target" in Chapter 9 "Adding and Managing Target Endpoints" of the  
+>[Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)  
 
-
-
-
-For more details about using RedshiftQL as a target, please review the section 
-"Using a RedshiftQL-Based as a Target" in Chapter 9 "Adding and Managing Target Endpoints" of the
-[Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
-
- # [NEXT](../redshift-config-task)
+ #### [NEXT](../redshift-config-task)

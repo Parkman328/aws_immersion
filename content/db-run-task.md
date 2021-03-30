@@ -51,9 +51,9 @@ You can run any query on testdrive tables and see the new data that was loaded.
 
 Feel free to explore the structure, etc. associated with the tables we have created. 
 
-Now we will enter a couple of queries.
+Now we will execute a couple of queries.
 
-Now type 
+Now type into the window in SQLPad (url: ___https://YOUR_SERVER_IP_ADDRESS:3000__)
 
 `select count(*) from testdrive."Player";`
 
@@ -64,12 +64,14 @@ Press "Run" button on top rigt of the screen to execute. This will give you
 the count of rows the Player table. That vaule should be displayed in the **Count** 
 area at the bottom of the screen.
 
+![SQLPad8 Image](/images/sqlpad8.png)
+
 Next, we will query a few rows from the Player table to examine the data. Type 
 
 `select * from testdrive."Player" limit 5;` 
 
 Once again press "Run" Button on Top Right of the screen to execute it.  Five rows should be returned in the **Output** area at the bottom of the screen.
-![PGAdmin 5 Image](/images/pgadmin-5.png)
+![SQLPad8 Image](/images/sqlpad9.png)
 
 When you have seen enough, you can declare Victory! for this part of the Lab. Press `Stop`
 in the top left corner of the **Replicate** console to end the task. After pressing `Stop` 
@@ -93,6 +95,6 @@ You just:
 
 All that in 5 easy steps!
 
-You can now move on to the next part of the AWS Immersion Day [Tutorials](../tutorials).
+#### You can now move on to the next part of the AWS Immersion Day [Tutorials](../tutorials).
 
 

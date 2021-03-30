@@ -5,7 +5,7 @@
 First things first, we need to open Qlik Replicate. 
 
    1.Open Replicate  in a new tab in your broswer. 
-   
+
    2.For url, username and password please refer to [GettingStarted Page](../getting_started)
    -  Please note that you may need to press accept security and proceed 
 
@@ -48,8 +48,8 @@ __Qlik Lab 3 - MySQL to Amazon Redshift in RealTime__
    4. [Step 4 - Configure a Transformation](../redshift-config-xform)
    5. [Step 5 - Run Your Task](../redshift-run-task)
 
-Click here to [Start Lab1 - MySQL to Postgres](../db-mysql-source)  
+#### Click here to [Start Lab1 - MySQL to Postgres](../db-mysql-source)  
 
-Click here to [Start Lab2 - MySQL to Kafka](../kafka-mysql-source)
+#### Click here to [Start Lab2 - MySQL to Kafka](../kafka-mysql-source)
 
-Click here to [Start Lab3 - MySQL to Amazon Redshift](../redshift-mysql-source)  
+#### Click here to [Start Lab3 - MySQL to Amazon Redshift](../redshift-mysql-source)  

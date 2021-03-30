@@ -25,8 +25,6 @@
   </url><url>
     <loc>http://localhost:80/categories/</loc>
   </url><url>
-    <loc>http://localhost:80/kafka-show/</loc>
-  </url><url>
     <loc>http://localhost:80/db-mysql-source/</loc>
   </url><url>
     <loc>http://localhost:80/kafka-mysql-source/</loc>

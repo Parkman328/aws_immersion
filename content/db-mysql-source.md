@@ -54,8 +54,8 @@ Assuming so, click `Save` and the configuration of your MySQL source endpoint is
 Click `Close` to close the window.
 
 
-For more details about using MySQL as a source, please review the section
-"Using a MyQL-Based Database as a Source" in Chapter 8 "Adding and Managing Source Endpoints" of the
-[Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
+> For more details about using MySQL as a source, please review the section  
+> "Using a MyQL-Based Database as a Source" in Chapter 8 "Adding and Managing Source Endpoints" of the  
+> [Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
 
-# [NEXT](../db-postgres-target) 
+#### [NEXT](../db-postgres-target) 

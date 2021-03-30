@@ -51,8 +51,8 @@ Assuming so, click `Save` and the configuration of your Postgres target endpoint
 Click `Close` to close the window.
 
 
-For more details about using PostgreSQL as a target, please review the section 
-"Using a PostgreSQL-Based as a Target" in Chapter 9 "Adding and Managing Target Endpoints" of the
-[Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
+>For more details about using PostgreSQL as a target, please review the section  
+>"Using a PostgreSQL-Based as a Target" in Chapter 9 "Adding and Managing Target Endpoints" of the  
+>[Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
 
- # [NEXT](../db-config-task)
+ #### [NEXT](../db-config-task)

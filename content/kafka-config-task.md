@@ -89,4 +89,4 @@ Press `Save` at the top left of the window and then press `Run`.
 
 ![Kafka Task 8 Image](/images/kafka-task-8.png)
 
-# [NEXT](../kafka-run-task)
+#### [NEXT](../kafka-run-task)

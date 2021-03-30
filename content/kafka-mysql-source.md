@@ -22,11 +22,9 @@ if you wish.
 To do this, click on `Manage Endpoint Connections...` and then select the MySQL source
 endpoint. From there you can `Test Connection`.
 
-> For more details about using MySQL as a source, please review the section
-
->"Using a MyQL-Based Database as a Source" in Chapter 8 "Adding and Managing Source Endpoints" 
-
+> For more details about using MySQL as a source, please review the section  
+>"Using a MyQL-Based Database as a Source" in Chapter 8 "Adding and Managing Source Endpoints"   
 >of the [Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
 
-# [NEXT](../kafka-target)
+#### [NEXT](../kafka-target)
  

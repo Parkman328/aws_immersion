@@ -89,6 +89,6 @@ You just:
 
 All that in 5 easy steps!
 
-You are now finished with AWS Immersion Day  Tutorials.
+#### You are now finished with AWS Immersion Day  Tutorials.
 
 

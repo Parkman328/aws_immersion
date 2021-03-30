@@ -66,8 +66,8 @@ Due to Design of Redshift Cluster you need  to use S3 as intermediate staging ar
 
 Next steps will walk you through that steps.
 
-For more details about using RedshiftQL as a target, please review the section 
-"Using a RedshiftQL-Based as a Target" in Chapter 9 "Adding and Managing Target Endpoints" of the
-[Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
+> For more details about using RedshiftQL as a target, please review the section    
+> "Using a RedshiftQL-Based as a Target" in Chapter 9 "Adding and Managing Target Endpoints" of the   
+> [Qlik Replicate User Guide](/files/Qlik_Replicate_User_Guide.pdf)
 
  # [NEXT](../redshift-s3)

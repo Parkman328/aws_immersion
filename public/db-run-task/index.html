@@ -129,18 +129,19 @@ You will see <code>mysql-src-database</code> as preconfigured and <code>postgres
 <p><img src="/images/prod/sqlpad3.png" alt="SQLPad3 Image"></p>
 <p><img src="/images/prod/sqlpad4.png" alt="SQLPad4 Image"></p>
 <p>Feel free to explore the structure, etc. associated with the tables we have created.</p>
-<p>Now we will enter a couple of queries.</p>
-<p>Now type</p>
+<p>Now we will execute a couple of queries.</p>
+<p>Now type into the window in SQLPad (url: _<strong>https://YOUR_SERVER_IP_ADDRESS:3000</strong>)</p>
 <p><code>select count(*) from testdrive.&quot;Player&quot;;</code></p>
 <p>Note the quotes around <strong>Player</strong> and that it begins with a capital &lsquo;P&rsquo;. The schemas are
 case-sensitive, so we need the quotes in order to find the table in the query.</p>
 <p>Press &ldquo;Run&rdquo; button on top rigt of the screen to execute. This will give you
 the count of rows the Player table. That vaule should be displayed in the <strong>Count</strong>
 area at the bottom of the screen.</p>
+<p><img src="/images/sqlpad8.png" alt="SQLPad8 Image"></p>
 <p>Next, we will query a few rows from the Player table to examine the data. Type</p>
 <p><code>select * from testdrive.&quot;Player&quot; limit 5;</code></p>
 <p>Once again press &ldquo;Run&rdquo; Button on Top Right of the screen to execute it.  Five rows should be returned in the <strong>Output</strong> area at the bottom of the screen.
-<img src="/images/pgadmin-5.png" alt="PGAdmin 5 Image"></p>
+<img src="/images/sqlpad9.png" alt="SQLPad8 Image"></p>
 <p>When you have seen enough, you can declare Victory! for this part of the Lab. Press <code>Stop</code>
 in the top left corner of the <strong>Replicate</strong> console to end the task. After pressing <code>Stop</code>
 and clicking <code>Yes</code> in the confirmation dialog, click on the <code>TASKS</code> tab at the top of the screen.
@@ -161,7 +162,7 @@ This will return you to the main window.</p>
 <li>Observed change data being recorded as it is sent to and applied at the  target</li>
 </ul>
 <p>All that in 5 easy steps!</p>
-<p>You can now move on to the next part of the AWS Immersion Day <a href="../tutorials">Tutorials</a>.</p>
+<h4 id="you-can-now-move-on-to-the-next-part-of-the-aws-immersion-day-tutorialstutorials">You can now move on to the next part of the AWS Immersion Day <a href="../tutorials">Tutorials</a>.</h4>
 
     
     </articles>
