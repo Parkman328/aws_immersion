@@ -150,7 +150,7 @@ As before, the first step in the configuration process is to tell Replicate that
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/redshift-s3/</guid>
-      <description>Next we need to configure our IAM Policy and Download Access and Secret Keys for Qlik Replicate to stage the data to Amazon S3 prior to writing it Redshift
+      <description>Next we need to configure our IAM Policy and Download Access and Secret Keys for Qlik Replicate to stage the data to Amazon S3 prior to writing it Redshift.
 AWS IAM Policies, Users, and Roles are way AWS Secures resources and gives the right amount of access.
 For this process we will give our current user access to all S3 buckets but your Cloud admin can secure it so user/role only has access to a single bucket we need.</description>
     </item>

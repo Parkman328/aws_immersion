@@ -21,13 +21,7 @@ __By this time all students should have recieved an email from instructor for yo
 
 # Before starting tutorial and labs make sure you can log into the following:
 
-1. Documentation for this Lab
-______________________
-* url: __http://YOUR_SERVER_IP_ADDRESS__  
-
-![](/images/prod/instructions.png)
-
-2. Connecting to Qlik Replicate Web UI
+1. Connecting to Qlik Replicate Web UI
 ________________________
 * url:__https://YOUR_SERVER_IP_ADDRESS:3552/attunityreplicate/__
 
@@ -46,7 +40,7 @@ If you must use a different browser please let the instructor know.
 ![](/images/prod/logon_replicate.png)
 
 
-3. Connecting to SQLPad
+2. Connecting to SQLPad
 ___
 __SQLPad is an Open Source tool that allows user to run SQL Query.__
 * url: ___https://YOUR_SERVER_IP_ADDRESS:3000__
@@ -55,7 +49,7 @@ __SQLPad is an Open Source tool that allows user to run SQL Query.__
 
 ![](/images/prod/sqlpad.png)
 
-4. Connecting to Kafdrop
+3. Connecting to Kafdrop
 ___
 __Kafdop is an Open Source tool that allows user to view Kafka queue and Topics.__
 * url: ___https://YOUR_SERVER_IP_ADDRESS:9000__
