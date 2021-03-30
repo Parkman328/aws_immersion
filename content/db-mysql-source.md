@@ -33,19 +33,21 @@ like  `MySQL Source`,
 
 You will notice as we proceed that the content of the configuration window is context-sensitive.
 
-![MySQL Source 2 Image](/images/mysql-src-2.png)
-
 ![MySQL Source 3 Image](/images/mysql-src-3.png)
 
 Fill in the blanks as indicated in the images above:
+
+*Please note only for mysql user will be 'root'*
+
 * Server: `127.0.0.1`
 * Port: `3306`
 * User: `root`
 * Password: `Aws_immersion123`
 * Security/SSL Mode: `None`
 
-and then click on `Test Connection`. Your screen should look like the following, indicating that
-your connection succeeded.
+Click on `Test Connection` button.
+
+Your screen should look like the followin;, indicating thatyour connection succeeded.
 
 ![MySQL Source 4 Image](/images/mysql-src-4.png)
 

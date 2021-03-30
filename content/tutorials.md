@@ -4,12 +4,13 @@
 
 First things first, we need to open Qlik Replicate. 
 
+* url:__https://YOUR_SERVER_IP_ADDRESS:3552/attunityreplicate/__
+
    1.Open Replicate  in a new tab in your broswer. 
 
    2.For url, username and password please refer to [GettingStarted Page](../getting_started)
    -  Please note that you may need to press accept security and proceed 
 
-  
 Once you are logged in you will see the main screen for Qlik Replicate.
 
 ![](/images/attunityreplicate.png)
@@ -19,7 +20,7 @@ Once you are logged in you will see the main screen for Qlik Replicate.
 To navigate the tutorial, it is best to follow the steps in order. You can do this by 
 pressing the `NEXT`link on bottom of each page. If for some reason you want to skip 
 to a particular section of the lab you can navigate via the table of contents listed below.
-
+Also the Navigation Menu on top of this documentation site can be used to navigate around.
 
 ### Tutorial Table of Content
 

@@ -4,8 +4,6 @@ section: Database-to-Database Replication
 tutorialtype: replicate
 permalink: /replicate/tutorial/db-run-task.php
 ---
-*Optional
-Before you  
 
 After you press `Run`, Replicate will automatically switch from **Designer** mode to **Monitor** mode. 
 You will be able to watch the status of the full load as it occurs, and then switch to monitoring 
@@ -39,13 +37,16 @@ You can run any query on testdrive tables and see the new data that was loaded.
 
 **You can run sample query** 
 
-- Execute Query Such as `select * from testdrive."Batting";`
+- Execute Query Such as `select * from testdrive."Batting";` to see the data movement from MySQL source to Target.
 
 ![SQLPad2 Image](/images/prod/sqlpad2.png)
 
 - Also Configure a Quick Widget to see the values in postgres Tables
 
+Press the Widget button and configure Label and Value
+
 ![SQLPad3 Image](/images/prod/sqlpad3.png)
+
 
 ![SQLPad4 Image](/images/prod/sqlpad4.png)
 
