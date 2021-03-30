@@ -42,11 +42,19 @@ Go to IAM section on your AWS Console by clicking on services(top left) -> IAM. 
 
 ![S3 Bucket Properties](/images/redshift-s3-5.png)
 
-At this point you will see IAM dashboard; click on `Users` and __Click on your user.__
+At this point you will see IAM dashboard; click on `Users`
 
 ![S3 Bucket Properties](/images/redshift-s3-6.png)
 
+Click on and press `Add User`
+
+Add User qlik-replicate and select programmatic access
+
+Press button Next: Permissions
 Go to Permissions Tab Click on Add Permissions
+Click on Create User
+Copy Access Key and Secret Key to Qlik Replicate Connection windown 
+(Click on Show on access key to view the key)
 
 ![S3 Bucket Properties](/images/redshift-s3-7.png)
 

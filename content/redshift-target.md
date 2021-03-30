@@ -50,7 +50,7 @@ Click on the button to copy the endpoint.
 
 __Once the endpoint is copied you should see that it has port number and database appended.__
 
-__Manually remove the valuess and use endpoint as a reference to fill in the variables.__
+__Manually remove the values and use endpoint as a reference to fill in the variables.__
 
 
 ![New Endpoint Image](/images/redshift-trg-2.png)

@@ -11,7 +11,7 @@ First things first, we need to open Qlik Replicate.
   
 Once you are logged in you will see the main screen for Qlik Replicate.
 
-![](/images/prod/attunityreplicate.png)
+![](/images/attunityreplicate.png)
  
 ### Navigating the Tutorial
 
