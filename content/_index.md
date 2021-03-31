@@ -2,19 +2,18 @@
 ![](/images/aws_immersion.png)  
 # Welcome to Qlik Tutorials for AWS Immersion Day 2021! 
 ________________________________________________________________
-## Agenda (10 AM - 3:30 PM)
+## Agenda (10 AM - 3:00 PM)
 * **10:00 am** Welcome & AWS Introduction - Tony Song (Immersion Day Leader, AWS)
-* **10:20 am** The Lake House architecture: the right tool for the right job - Dilip Rajan (Partner Solution Architect, AWS)
-* **11:00 am** Deliver real-time, Active Intelligence – Qlik Introduction  
-    * **Demo:** Unlock your SAP data for Cloud Analytics
-* **11:35 pm Qlik Demo Lab1** - MySQL to Postgres Using Qlik Replicate
+* **10:15 am** The Lake House architecture: the right tool for the right job - Dilip Rajan (Partner Solution Architect, AWS)
+* **10:40 am** Deliver real-time, Active Intelligence – Qlik Introduction - Itamar Ankorion (SVP, Qlik)
+    * **Demo:** Unlock your SAP data for Cloud Analytics - Dalton Ruer (Solution Architect, Qlik)
+* **11:20 pm** Event Engine account signup - Dilip Rajan, John Park (Solution Architect, Qlik)
+* **11:30 pm Qlik Demo Lab1** - MySQL to Postgres Using Qlik Replicate
 * **12:00 pm** - **Lunch Break**
-* **1:00 pm** Event Engine account signup - Dilip Rajan, John Park (Solution Architect, Qlik)
-* **1:20 pm Qlik Lab2** - MySQL to Kafka Using Qlik Replicate
-* **1:40 pm Qlik Lab3** - MySQL to Amazon Redshift Using Qlik Replicate
-* **2:00 pm** - **Qlik Data Integration**
-    * **Demo:** Agile data warehouse automation - Qlik Compose - John Park(Solution Architect, Qlik)
-* **2:10 pm** - **Qlik Data Analytics**
+* **1:00 pm Qlik Lab2** - MySQL to Kafka Using Qlik Replicate
+* **1:20 pm Break**
+* **1:30 pm Qlik Lab3** - MySQL to Amazon Redshift Using Qlik Replicate
+* **2:00 pm** - **Qlik Data Analytics**
     * **Demo:** Machine learning evolved - AWS SageMaker Integration to Qlik – John Park(Solution Architect, Qlik)
     * **Demo:** Modern, AI-powered analytics: Qlik Sense Saas - Dalton Ruer (Solution Architect, Qlik)
 * **2:30 pm** Wrap up & AWS event survey

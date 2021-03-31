@@ -54,9 +54,10 @@ Qlik Replicate Offline User Guide) - PDF Help Guide for Qlik Replicate</descript
       
       <guid>http://localhost:80/tutorials/</guid>
       <description>AWS Immersion Day 2021 Tutorials Log In to Qlik Replicate to Start the Tutorial First things first, we need to open Qlik Replicate.
+  url:https://YOUR_SERVER_IP_ADDRESS:3552/attunityreplicate/
 1.Open Replicate in a new tab in your broswer.
 2.For url, username and password please refer to GettingStarted Page
- Please note that you may need to press accept security and proceed  Once you are logged in you will see the main screen for Qlik Replicate.</description>
+ Please note that you may need to press accept security and proceed    Once you are logged in you will see the main screen for Qlik Replicate.</description>
     </item>
     
     <item>
@@ -221,8 +222,7 @@ Initially you will not see your Kafka Topics configured for each table but after
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:80/db-run-task/</guid>
-      <description>*Optional Before you
-After you press Run, Replicate will automatically switch from Designer mode to Monitor mode. You will be able to watch the status of the full load as it occurs, and then switch to monitoring change data capture as well.
+      <description>After you press Run, Replicate will automatically switch from Designer mode to Monitor mode. You will be able to watch the status of the full load as it occurs, and then switch to monitoring change data capture as well.
 When Full Load is complete, click on the Completed bar to display the tables. There is DML activity running in the background. Click on the Change Processing tab to see it in action.</description>
     </item>
     
